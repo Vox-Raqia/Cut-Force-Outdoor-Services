@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Contact page meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cut Force Outdoor Services | Hope, BC</title>
+    <meta name="description" content="Contact Cut Force Outdoor Services in Hope, BC. Call 604-206-8586 or fill out our contact form for property recovery and exterior cleaning services.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE OUTDOOR SERVICES</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                </ul>
+            </nav>
+            <div class="phone-header">604-206-8586</div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="container hero-content">
+            <h1>Contact Us</h1>
+            <p class="hero-tagline">We're Here to Help</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Ready to restore your property? Contact us today for a free consultation.</p>
+                <p class="phone-large">604-206-8586</p>
+                <p>Hope, BC</p>
+                <p>Available Monday - Saturday | Emergency services available</p>
+            </div>
+            
+            <div class="contact-info margin-top">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" action="#" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="604-XXX-XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                
+                <div class="confirmation" id="contactConfirmation">
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for your message. We will get back to you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CUT FORCE OUTDOOR SERVICES</h3>
+                    <p>CUT. CLEAN. RESTORE.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p class="footer-phone">604-206-8586</p>
+                    <p>Hope, BC</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Cut Force Outdoor Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact form JavaScript for demo confirmation -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('contactConfirmation').classList.add('show');
+        });
+    </script>
+</body>
+</html>

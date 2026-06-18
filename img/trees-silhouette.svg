@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="150" viewBox="0 0 600 150">
+    <path d="M50,150 L50,100 L30,100 L70,50 L110,100 L90,100 L90,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <path d="M150,150 L150,110 L130,110 L170,60 L210,110 L190,110 L190,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <path d="M250,150 L250,90 L230,90 L270,40 L310,90 L290,90 L290,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <path d="M350,150 L350,100 L330,100 L370,50 L410,100 L390,100 L390,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <path d="M450,150 L450,110 L430,110 L470,60 L510,110 L490,110 L490,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <path d="M550,150 L550,120 L530,120 L570,70 L610,120 L590,120 L590,150 Z" fill="#A8FF00" opacity="0.3"/>
+    <!-- Mountain silhouette -->
+    <path d="M0,150 L150,80 L300,120 L600,50 L600,150 Z" fill="#333333" opacity="0.2"/>
+</svg>

@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic "Cut Force Logo" [ref=e5]
+        - generic [ref=e6]: CUT FORCE OUTDOOR SERVICES
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12] [cursor=pointer]:
+              - /url: services.html
+          - listitem [ref=e13]:
+            - link "About" [ref=e14] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e15]:
+            - link "Contact" [ref=e16] [cursor=pointer]:
+              - /url: contact.html
+          - listitem [ref=e17]:
+            - link "Book Now" [ref=e18] [cursor=pointer]:
+              - /url: booking.html
+      - generic [ref=e19]: 604-206-8586
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - heading "CUT. CLEAN. RESTORE." [level=1] [ref=e22]
+      - paragraph [ref=e23]: Property Recovery & Exterior Cleaning
+      - paragraph [ref=e24]: Professional outdoor cleanup and restoration services in Hope, BC. From chainsaw work to pressure washing, we bring your property back to life.
+      - generic [ref=e25]:
+        - link "Call Now" [ref=e26] [cursor=pointer]:
+          - /url: tel:6042068586
+        - link "Book a Service" [ref=e27] [cursor=pointer]:
+          - /url: booking.html
+    - generic:
+      - img "Scroll down"
+  - generic [ref=e30]:
+    - heading "Our Services" [level=2] [ref=e31]
+    - paragraph [ref=e32]: Expert outdoor property recovery and cleaning solutions
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - img "Professional worker using chainsaw in forest" [ref=e35]
+        - heading "Chainsaw Work" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Tree removal, limbing, bucking, and precision cutting for property recovery.
+      - generic [ref=e38]:
+        - img "Brush clearing with chainsaw in overgrown area" [ref=e39]
+        - heading "Brush Clearing" [level=3] [ref=e40]
+        - paragraph [ref=e41]: Rapid vegetation removal for fire prevention and land clearing.
+      - generic [ref=e42]:
+        - img "Pressure washing driveway and exterior surfaces" [ref=e43]
+        - heading "Pressure Washing" [level=3] [ref=e44]
+        - paragraph [ref=e45]: Exterior cleaning for driveways, buildings, decks, and outdoor structures.
+    - link "View All Services" [ref=e47] [cursor=pointer]:
+      - /url: services.html
+  - contentinfo [ref=e48]:
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - heading "CUT FORCE OUTDOOR SERVICES" [level=3] [ref=e52]
+          - paragraph [ref=e53]: CUT. CLEAN. RESTORE.
+        - generic [ref=e54]:
+          - heading "Contact" [level=3] [ref=e55]
+          - paragraph [ref=e56]: 604-206-8586
+          - paragraph [ref=e57]: Hope, BC
+        - generic [ref=e58]:
+          - heading "Quick Links" [level=3] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "Services" [ref=e62] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e63]:
+              - link "About" [ref=e64] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e65]:
+              - link "Contact" [ref=e66] [cursor=pointer]:
+                - /url: contact.html
+            - listitem [ref=e67]:
+              - link "Book Now" [ref=e68] [cursor=pointer]:
+                - /url: booking.html
+      - paragraph [ref=e70]: © 2024 Cut Force Outdoor Services. All rights reserved.
