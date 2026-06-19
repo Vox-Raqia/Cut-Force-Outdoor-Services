@@ -1,0 +1,10 @@
+# Playwright MCP
+.playwright-mcp/
+
+# Temp files
+css/delete-me.css
+css/.trash-*.css
+
+# OS files
+.DS_Store
+Thumbs.db

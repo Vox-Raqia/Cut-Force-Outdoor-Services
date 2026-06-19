@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic "Cut Force Logo" [ref=e5]
+        - generic [ref=e6]: CUT FORCE OUTDOOR SERVICES
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12] [cursor=pointer]:
+              - /url: services.html
+          - listitem [ref=e13]:
+            - link "About" [ref=e14] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e15]:
+            - link "Contact" [ref=e16] [cursor=pointer]:
+              - /url: contact.html
+          - listitem [ref=e17]:
+            - link "Book Now" [ref=e18] [cursor=pointer]:
+              - /url: booking.html
+      - generic [ref=e19]: 604-206-8586
+  - generic [ref=e27]:
+    - heading "CUT. CLEAN. RESTORE." [level=1] [ref=e28]
+    - paragraph [ref=e29]: Property Recovery & Exterior Cleaning
+    - paragraph [ref=e30]: Professional outdoor cleanup and restoration services in Hope, BC.
+    - generic [ref=e31]:
+      - link "Call Now" [ref=e32] [cursor=pointer]:
+        - /url: tel:6042068586
+      - link "Book a Service" [ref=e33] [cursor=pointer]:
+        - /url: booking.html
+    - img [ref=e35] [cursor=pointer]
+  - generic [ref=e39]:
+    - heading "Our Services" [level=2] [ref=e40]
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - img "Chainsaw work" [ref=e43]
+        - heading "Chainsaw Work" [level=3] [ref=e44]
+        - paragraph [ref=e45]: Tree removal and precision cutting.
+      - generic [ref=e46]:
+        - img "Brush clearing" [ref=e47]
+        - heading "Brush Clearing" [level=3] [ref=e48]
+        - paragraph [ref=e49]: Vegetation removal for fire safety.
+      - generic [ref=e50]:
+        - img "Pressure washing" [ref=e51]
+        - heading "Pressure Washing" [level=3] [ref=e52]
+        - paragraph [ref=e53]: Exterior cleaning services.
+  - contentinfo [ref=e54]:
+    - generic [ref=e55]:
+      - paragraph [ref=e56]: 604-206-8586
+      - paragraph [ref=e57]: Hope, BC
+      - paragraph [ref=e58]: © 2024 Cut Force Outdoor Services.

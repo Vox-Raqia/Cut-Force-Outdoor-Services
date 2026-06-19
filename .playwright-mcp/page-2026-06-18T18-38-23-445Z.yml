@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic "Cut Force Logo" [ref=e5]
+        - generic [ref=e6]: CUT FORCE OUTDOOR SERVICES
+      - navigation [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e11]:
+            - link "Services" [ref=e12] [cursor=pointer]:
+              - /url: services.html
+          - listitem [ref=e13]:
+            - link "About" [ref=e14] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e15]:
+            - link "Contact" [ref=e16] [cursor=pointer]:
+              - /url: contact.html
+          - listitem [ref=e17]:
+            - link "Book Now" [ref=e18] [cursor=pointer]:
+              - /url: booking.html
+      - generic [ref=e19]: 604-206-8586
+  - generic [ref=e24]:
+    - heading "Our Services" [level=1] [ref=e25]
+    - paragraph [ref=e26]: Complete Property Recovery Solutions
+  - generic [ref=e28]:
+    - heading "What We Do" [level=2] [ref=e29]
+    - paragraph [ref=e30]: Professional outdoor property recovery and cleaning services
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img "Worker using chainsaw in forest setting" [ref=e33]
+        - img "Chainsaw icon" [ref=e35]
+        - heading "Chainsaw Work" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Expert tree removal, storm damage cleanup, limbing, bucking, and precision cutting for residential and commercial properties.
+        - link "Request this service" [ref=e38] [cursor=pointer]:
+          - /url: booking.html?service=chainsaw
+      - generic [ref=e39]:
+        - img "Heavy brush clearing with professional equipment" [ref=e40]
+        - img "Brush clearing icon" [ref=e42]
+        - heading "Brush Clearing" [level=3] [ref=e43]
+        - paragraph [ref=e44]: Rapid vegetation removal for fire prevention, land clearing, and property boundary maintenance.
+        - link "Request this service" [ref=e45] [cursor=pointer]:
+          - /url: booking.html?service=brush
+      - generic [ref=e46]:
+        - img "Professional pressure washing driveway and concrete surfaces" [ref=e47]
+        - img [ref=e49]
+        - heading "Pressure Washing" [level=3] [ref=e56]
+        - paragraph [ref=e57]: Exterior cleaning for driveways, walkways, buildings, decks, and outdoor structures.
+        - link "Request this service" [ref=e58] [cursor=pointer]:
+          - /url: booking.html?service=pressure
+      - generic [ref=e59]:
+        - img "Complete property exterior cleanup and restoration" [ref=e60]
+        - img [ref=e62]
+        - heading "Exterior Cleanup" [level=3] [ref=e67]
+        - paragraph [ref=e68]: Comprehensive property restoration including debris removal, land clearing, and outdoor space renewal.
+        - link "Request this service" [ref=e69] [cursor=pointer]:
+          - /url: booking.html?service=exterior
+      - generic [ref=e70]:
+        - img "Storm debris removal with chainsaw and heavy equipment" [ref=e71]
+        - img [ref=e73]
+        - heading "Storm Debris Removal" [level=3] [ref=e75]
+        - paragraph [ref=e76]: Emergency cleanup services for fallen trees, broken branches, and weather-related property damage.
+        - link "Request this service" [ref=e77] [cursor=pointer]:
+          - /url: booking.html?service=storm
+      - generic [ref=e78]:
+        - img "Forest restoration and property recovery work in progress" [ref=e79]
+        - img [ref=e81]
+        - heading "Property Recovery" [level=3] [ref=e84]
+        - paragraph [ref=e85]: Full property restoration and recovery services to bring neglected outdoor spaces back to life.
+        - link "Request this service" [ref=e86] [cursor=pointer]:
+          - /url: booking.html?service=recovery
+  - contentinfo [ref=e87]:
+    - generic [ref=e88]:
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - heading "CUT FORCE OUTDOOR SERVICES" [level=3] [ref=e91]
+          - paragraph [ref=e92]: CUT. CLEAN. RESTORE.
+        - generic [ref=e93]:
+          - heading "Contact" [level=3] [ref=e94]
+          - paragraph [ref=e95]: 604-206-8586
+          - paragraph [ref=e96]: Hope, BC
+        - generic [ref=e97]:
+          - heading "Quick Links" [level=3] [ref=e98]
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - link "Services" [ref=e101] [cursor=pointer]:
+                - /url: services.html
+            - listitem [ref=e102]:
+              - link "About" [ref=e103] [cursor=pointer]:
+                - /url: about.html
+            - listitem [ref=e104]:
+              - link "Contact" [ref=e105] [cursor=pointer]:
+                - /url: contact.html
+            - listitem [ref=e106]:
+              - link "Book Now" [ref=e107] [cursor=pointer]:
+                - /url: booking.html
+      - paragraph [ref=e109]: © 2024 Cut Force Outdoor Services. All rights reserved.

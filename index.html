@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags and basic setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cut Force Outdoor Services | Hope, BC | CUT. CLEAN. RESTORE.</title>
-    <meta name="description" content="Professional property recovery and exterior cleaning services in Hope, BC. Chainsaw work, brush clearing, pressure washing, and storm debris removal.">
+    <meta name="description" content="Professional property recovery and exterior cleaning services in Hope, BC.">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header: Sticky navigation with logo and phone -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <div class="logo-icon" aria-label="Cut Force Logo"></div>
-                <span>CUT FORCE OUTDOOR SERVICES</span>
-            </div>
+            <div class="logo"><div class="logo-icon" aria-label="Cut Force Logo"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,90 +27,126 @@
         </div>
     </header>
 
-    <!-- Hero Section: Cinematic layered composition -->
-    <section class="hero">
-        <!-- Background texture layer -->
-        <div class="hero-bg-texture"></div>
-        <!-- Chainsaw sparks layer - left -->
-        <div class="hero-sparks"></div>
-        <!-- Pressure spray layer - right -->
-        <div class="hero-spray"></div>
-        <!-- Saw blade emblem - centered behind text -->
-        <div class="hero-emblem"></div>
+    <section class="hero" id="main-content">
+        <div class="hero-overlay"></div>
+        <div class="forest-parallax"></div>
+        <div class="mist-layer"></div>
+        <div class="sawblade"></div>
         
         <div class="container hero-content">
-            <h1>CUT. CLEAN. RESTORE.</h1>
+            <h1 class="hero-title">CUT. CLEAN. RESTORE.</h1>
             <p class="hero-tagline">Property Recovery & Exterior Cleaning</p>
-            <p class="hero-description margin-bottom">Professional outdoor cleanup and restoration services in Hope, BC. From chainsaw work to pressure washing, we bring your property back to life.</p>
-            <div class="cta-buttons">
-                <a href="tel:6042068586" class="btn btn-primary"><span>Call Now</span></a>
-                <a href="booking.html" class="btn btn-secondary">Book a Service</a>
+            <p class="hero-description margin-bottom">Professional outdoor cleanup and restoration services in Hope, BC.</p>
+            <div class="hero-buttons">
+                <a href="tel:6042068586" class="btn btn-orange"><span>Call Now</span></a>
+                <a href="booking.html" class="btn btn-outline">Book a Service</a>
             </div>
-        </div>
-        
-        <!-- Scroll indicator -->
-        <div class="scroll-indicator" onclick="document.querySelector('.services').scrollIntoView({behavior: 'smooth'})">
-            <svg viewBox="0 0 24 24" aria-label="Scroll down">
-                <path d="M7 10l5 5 5-5z"/>
-            </svg>
+            <div class="scroll-indicator" onclick="document.querySelector('.services').scrollIntoView({behavior:'smooth'})">
+                <svg viewBox="0 0 24 24" aria-label="Scroll down"><path d="M12 16 L12 6"/><path d="M12 16 L8 12"/><path d="M12 16 L16 12"/></svg>
+            </div>
         </div>
     </section>
 
-    <!-- Services Overview: Quick preview of key offerings -->
+    <canvas id="sparkCanvas"></canvas>
+
     <section class="services">
         <div class="container">
             <h2 class="text-center">Our Services</h2>
-            <p class="text-center">Expert outdoor property recovery and cleaning solutions</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Chainsaw+Work" alt="Professional worker using chainsaw in forest">
+                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Chainsaw" alt="Chainsaw work" loading="lazy">
                     <h3>Chainsaw Work</h3>
-                    <p>Tree removal, limbing, bucking, and precision cutting for property recovery.</p>
+                    <p>Tree removal and precision cutting.</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Brush+Clearing" alt="Brush clearing with chainsaw in overgrown area">
+                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Brush" alt="Brush clearing" loading="lazy">
                     <h3>Brush Clearing</h3>
-                    <p>Rapid vegetation removal for fire prevention and land clearing.</p>
+                    <p>Vegetation removal for fire safety.</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Pressure+Washing" alt="Pressure washing driveway and exterior surfaces">
+                    <img src="https://placehold.co/400x180/050608/FF6A00?text=Pressure" alt="Pressure washing" loading="lazy">
                     <h3>Pressure Washing</h3>
-                    <p>Exterior cleaning for driveways, buildings, decks, and outdoor structures.</p>
+                    <p>Exterior cleaning services.</p>
                 </div>
-            </div>
-            <div class="text-center margin-top">
-                <a href="services.html" class="btn btn-primary">View All Services</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer: Business info and navigation links -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>CUT FORCE OUTDOOR SERVICES</h3>
-                    <p>CUT. CLEAN. RESTORE.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p class="footer-phone">604-206-8586</p>
-                    <p>Hope, BC</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="booking.html">Book Now</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 Cut Force Outdoor Services. All rights reserved.</p>
-            </div>
+            <p class="footer-phone">604-206-8586</p>
+            <p>Hope, BC</p>
+            <p>&copy; 2024 Cut Force Outdoor Services.</p>
         </div>
     </footer>
+
+    <script>
+// SPARK TRAIL EFFECT
+let animationId;
+const canvas = document.getElementById('sparkCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let sparks = [];
+
+document.addEventListener('mousemove', (e) => {
+    for (let i = 0; i < 3; i++) {
+        sparks.push({
+            x: e.clientX, y: e.clientY,
+            size: Math.random() * 3 + 1,
+            life: 30,
+            dx: (Math.random() - 0.5) * 4,
+            dy: (Math.random() - 0.5) * 4,
+            color: `rgba(255,106,0,${Math.random()})`
+        });
+    }
+});
+
+function sparkBurst(x, y) {
+    for (let i = 0; i < 20; i++) {
+        sparks.push({
+            x, y,
+            size: Math.random() * 3 + 1,
+            life: 20,
+            dx: (Math.random() - 0.5) * 8,
+            dy: (Math.random() - 0.5) * 8,
+            color: `rgba(255,106,0,${Math.random()})`
+        });
+    }
+}
+
+document.querySelectorAll('.btn-orange, .btn-outline').forEach(btn => {
+    btn.addEventListener('mouseenter', (e) => {
+        const rect = btn.getBoundingClientRect();
+        sparkBurst(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    });
+});
+
+function animate() {
+    if (sparks.length === 0) {
+        animationId = requestAnimationFrame(animate);
+        return;
+    }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    sparks.forEach((spark, i) => {
+        spark.x += spark.dx; spark.y += spark.dy; spark.life--;
+        ctx.beginPath(); ctx.arc(spark.x, spark.y, spark.size, 0, Math.PI * 2);
+        ctx.fillStyle = spark.color; ctx.fill();
+        if (spark.life <= 0) sparks.splice(i, 1);
+    });
+    animationId = requestAnimationFrame(animate);
+}
+animate();
+
+// PARALLAX SCROLL
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const mist = document.querySelector('.mist-layer');
+    const forest = document.querySelector('.forest-parallax');
+    if (mist) mist.style.transform = `translateX(${scrollY * 0.05}px)`;
+    if (forest) forest.style.transform = `translateY(${scrollY * 0.15}px)`;
+});
+    </script>
 </body>
 </html>
