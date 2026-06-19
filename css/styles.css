@@ -128,3 +128,6 @@ footer { background: var(--bg-primary); border-top: 2px solid var(--accent-orang
     .hero-title { letter-spacing: 10px; }
     .hero-tagline { letter-spacing: 6px; }
 }
+/* Page Hero Overlay - Same cinematic gradient as home hero */
+.page-hero::before { content: `; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.9) 100%); z-index: 1; }
+.page-hero h1, .page-hero p { position: relative; z-index: 2; }
