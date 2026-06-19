@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Cut Force Outdoor Services | Hope, BC</title>
-    <meta name="description" content="Professional outdoor services including chainsaw work, brush clearing, pressure washing, exterior cleanup, and storm debris removal in Hope, BC.">
+    <meta name="description" content="Practical outdoor work for real properties in Hope, BC. Chainsaw work, brush clearing, and pressure washing done safely with straightforward tools.">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-icon"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
+            <div class="logo"><div class="logo-icon" aria-label="Cut Force Logo"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="booking.html">Book Now</a></li>
@@ -26,74 +28,183 @@
     </header>
 
     <section class="hero" style="min-height: 50vh;">
+        <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>Our Services</h1>
-            <p class="hero-tagline">Complete Property Recovery Solutions</p>
+            <p class="hero-tagline">Practical outdoor work for real properties in Hope, BC</p>
         </div>
     </section>
 
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">What We Do</h2>
-            <p class="text-center">Professional outdoor property recovery and cleaning services</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="img/service-chainsaw.png" alt="Chainsaw work in forest" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Chainsaw Work</h3>
-                        <p>Expert tree removal, storm damage cleanup, limbing, bucking, and precision cutting.</p>
-                        <a href="booking.html?service=chainsaw" class="btn btn-orange">Request this service</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <img src="img/service-brush.png" alt="Brush clearing with equipment" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Brush Clearing</h3>
-                        <p>Rapid vegetation removal for fire prevention, land clearing, and property boundary maintenance.</p>
-                        <a href="booking.html?service=brush" class="btn btn-orange">Request this service</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <img src="img/service-pressure.png" alt="Pressure washing driveway" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Pressure Washing</h3>
-                        <p>Exterior cleaning for driveways, walkways, buildings, decks, and outdoor structures.</p>
-                        <a href="booking.html?service=pressure" class="btn btn-orange">Request this service</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <img src="https://placehold.co/400x200/050608/FF6A00?text=Exterior" alt="Complete property exterior cleanup" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Exterior Cleanup</h3>
-                        <p>Comprehensive property restoration including debris removal and land clearing.</p>
-                        <a href="booking.html?service=exterior" class="btn btn-orange">Request this service</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <img src="https://placehold.co/400x200/050608/FF6A00?text=Storm" alt="Storm debris removal" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Storm Debris Removal</h3>
-                        <p>Emergency cleanup services for fallen trees and weather-related property damage.</p>
-                        <a href="booking.html?service=storm" class="btn btn-orange">Request this service</a>
-                    </div>
-                </div>
-                
-                <div class="service-card">
-                    <img src="https://placehold.co/400x200/050608/FF6A00?text=Recovery" alt="Forest restoration work" loading="lazy">
-                    <div class="service-card-content">
-                        <h3>Property Recovery</h3>
-                        <p>Full property restoration to bring neglected outdoor spaces back to life.</p>
-                        <a href="booking.html?service=recovery" class="btn btn-orange">Request this service</a>
+    <main id="main-content">
+        <!-- Chainsaw Work Section -->
+        <section class="services" id="chainsaw-work">
+            <div class="container">
+                <h2 class="text-center">Chainsaw Work</h2>
+                <p class="text-center margin-bottom">Small-to-medium tree and limb work done safely</p>
+                <div class="services-grid">
+                    <div class="service-card" style="max-width: 800px; margin: 0 auto;">
+                        <img src="img/service-chainsaw.png" alt="Chainsaw work in forest" loading="lazy">
+                        <div class="service-card-content">
+                            <p>This includes:</p>
+                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                                <li>Cutting and removing small trees</li>
+                                <li>Limb removal</li>
+                                <li>Clearing fallen or problem branches</li>
+                                <li>Improving safety around structures where it's safe to do so</li>
+                            </ul>
+                            <p>If a job requires rigging, climbing, or advanced arborist equipment, you'll be told upfront — no guessing, no risks.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Brush Clearing Section -->
+        <section class="services" id="brush-clearing">
+            <div class="container">
+                <h2 class="text-center">Brush Clearing</h2>
+                <p class="text-center margin-bottom">Reduce fire risk and reclaim overgrown areas</p>
+                <div class="services-grid">
+                    <div class="service-card" style="max-width: 800px; margin: 0 auto;">
+                        <img src="img/service-brush.png" alt="Brush clearing with equipment" loading="lazy">
+                        <div class="service-card-content">
+                            <p>Brush clearing helps:</p>
+                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                                <li>Remove dry, overgrown vegetation</li>
+                                <li>Reduce wildfire risk</li>
+                                <li>Open up pathways and usable space</li>
+                                <li>Improve visibility and property access</li>
+                            </ul>
+                            <p>This is practical, safety-focused work that makes your property easier to maintain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pressure Washing Section -->
+        <section class="services" id="pressure-washing">
+            <div class="container">
+                <h2 class="text-center">Pressure Washing</h2>
+                <p class="text-center margin-bottom">Clean, restore, and refresh exterior surfaces</p>
+                <div class="services-grid">
+                    <div class="service-card" style="max-width: 800px; margin: 0 auto;">
+                        <img src="img/service-pressure.png" alt="Pressure washing driveway" loading="lazy">
+                        <div class="service-card-content">
+                            <p>Pressure washing is ideal for:</p>
+                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                                <li>Driveways</li>
+                                <li>Walkways</li>
+                                <li>Decks and patios</li>
+                                <li>Siding and exterior walls</li>
+                                <li>Moss, grime, and buildup removal</li>
+                            </ul>
+                            <p>A clean surface makes a huge difference — especially in our damp BC climate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Not Offered Section -->
+        <section class="services" id="not-offered">
+            <div class="container">
+                <h2 class="text-center">What's Not Offered (Yet)</h2>
+                <p class="text-center margin-bottom">To keep expectations clear and honest</p>
+                <div class="services-grid">
+                    <div class="service-card" style="max-width: 800px; margin: 0 auto;">
+                        <div class="service-card-content">
+                            <ul style="margin-left: 1.5rem; color: var(--text-gray);">
+                                <li>No hazardous tree removals</li>
+                                <li>No climbing or rigging work</li>
+                                <li>No stump grinding</li>
+                                <li>No large-scale land clearing</li>
+                                <li>No emergency storm response</li>
+                                <li>Not fully insured yet (in progress)</li>
+                            </ul>
+                            <p style="margin-top: 1rem;">If something is outside the current setup, you'll hear that upfront.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Used Section -->
+        <section class="services" id="tools">
+            <div class="container">
+                <h2 class="text-center">Tools Used</h2>
+                <p class="text-center margin-bottom">Straightforward tools. Reliable results.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Pickup truck</h3>
+                            <p>For hauling and cleanup.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Chainsaw</h3>
+                            <p>For tree and limb work.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Pressure washer</h3>
+                            <p>For exterior cleaning.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center margin-top">No overcomplication — just the essentials used with care.</p>
+            </div>
+        </section>
+
+        <!-- Service Area Section -->
+        <section class="services" id="service-area">
+            <div class="container">
+                <h2 class="text-center">Service Area</h2>
+                <p class="text-center margin-bottom">Serving Hope, BC and surrounding communities</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Silver Creek</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Kawkawa Lake</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Flood Hope Road</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Laidlaw</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Yale</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center margin-top">If you're nearby, chances are good I can help.</p>
+            </div>
+        </section>
+
+        <!-- Ready to Book Section -->
+        <section class="services" id="ready-to-book">
+            <div class="container">
+                <h2 class="text-center">Ready to Book?</h2>
+                <p class="text-center margin-bottom">If you've got outdoor work that needs doing — heavy, messy, or just too much to tackle alone — I'm here to help.</p>
+                <div class="text-center">
+                    <a href="booking.html" class="btn btn-orange"><span>Book a Service</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">

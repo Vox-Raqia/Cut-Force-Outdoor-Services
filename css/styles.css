@@ -30,6 +30,7 @@ header { position: sticky; top: 0; background: var(--bg-secondary); border-botto
 nav ul { display: flex; list-style: none; gap: 2rem; }
 nav a { color: var(--text-white); text-transform: uppercase; font-weight: 600; transition: color 0.3s; padding: 5px 10px; }
 nav a:hover { color: var(--accent-orange); }
+nav a.active { color: var(--accent-green); border-bottom: 2px solid var(--accent-green); }
 nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 
 /* Skip link */
@@ -71,6 +72,11 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 @keyframes sprayWaver { 0% { transform: translateX(0) skewX(-2deg); } 100% { transform: translateX(10px) skewX(2deg); } }
 @keyframes rotateBlade { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
 
+/* Utility Classes */
+.margin-bottom { margin-bottom: 2rem; }
+.margin-top { margin-top: 2rem; }
+.text-center { text-align: center; }
+
 /* Services Section */
 .services { padding: 4rem 0; background: var(--bg-primary); }
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
@@ -82,7 +88,8 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 .service-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 60px; background: linear-gradient(180deg, rgba(5,6,8,0.9) 0%, transparent 100%); pointer-events: none; z-index: 1; }
 
 /* About Section */
-.about { padding: 4rem 0; background: var(--bg-secondary); position: relative; }
+.about { padding: 4rem 0; background: var(--bg-secondary); position: relative; line-height: 1.55; }
+.about h2, .about h3, .about p { line-height: 1.55; }
 .mission-values { margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
 .value-item { background: var(--bg-primary); padding: 1.5rem; border-left: 3px solid var(--accent-green); }
 
@@ -128,6 +135,7 @@ footer { background: var(--bg-primary); border-top: 2px solid var(--accent-orang
     .hero-title { letter-spacing: 10px; }
     .hero-tagline { letter-spacing: 6px; }
 }
+
 /* Page Hero Overlay - Same cinematic gradient as home hero */
-.page-hero::before { content: `; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.9) 100%); z-index: 1; }
+.page-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.9) 100%); z-index: 1; }
 .page-hero h1, .page-hero p { position: relative; z-index: 2; }
