@@ -167,8 +167,18 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 .field-error { color: #ef4444; font-size: 0.85rem; margin-top: 4px; display: none; }
 .field-error.show { display: block; }
 .form-row { display: grid; grid-template-columns: 1fr; gap: 16px; }
-.confirmation { display: none; background: var(--bg-primary); border: 2px solid var(--accent-green); padding: 32px; text-align: center; margin-top: 24px; border-radius: 8px; }
+.btn.loading { pointer-events: none; opacity: 0.7; white-space: nowrap; }
+.btn.loading::after { content: ''; width: 18px; height: 18px; border: 2px solid var(--text-white); border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; margin-left: 10px; display: inline-block; vertical-align: middle; }
+.btn-success { background: var(--accent-green) !important; cursor: default; animation: pulse 0.6s ease-in-out; }
+.confirmation { display: none; background: var(--bg-primary); border: 2px solid var(--accent-green); padding: 32px; text-align: center; margin-top: 24px; border-radius: 8px; animation: fadeIn 0.4s ease-out; }
 .confirmation.show { display: block; }
+.form-error-message { display: none; background: #ef4444; color: white; padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; text-align: center; font-weight: 600; }
+.form-error-message.show { display: block; }
+
+/* Spinner & pulse animations */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 
 /* Gallery */
 .gallery-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }

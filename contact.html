@@ -46,11 +46,13 @@
             </div>
             <p class="text-center mb-l text-muted">Prefer not to use forms? You can also call or text anytime.</p>
 
+            <div class="form-error-message" id="contactFormError">Sorry, the message could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.</div>
+
             <form class="contact-form" action="https://formsubmit.co/carl@cutforceoutdoorservices.ca" method="POST" id="contactForm">
-                <input type="hidden" name="_subject" value="New contact message - Cut Force Outdoor Services">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" class="hidden">
+                <input type="hidden" name="_subject" value="New contact message - Cut Force Outdoor Services" aria-hidden="true">
+                <input type="hidden" name="_captcha" value="false" aria-hidden="true">
+                <input type="hidden" name="_template" value="table" aria-hidden="true">
+                <input type="text" name="_honey" class="hidden" autocomplete="off" aria-hidden="true" tabindex="-1">
 
                 <div class="form-group">
                     <label for="contactName">Name *</label>
@@ -117,26 +119,28 @@
             const form = this;
             const submitButton = form.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
-            const errorText = 'Sorry, the message could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.';
+            const errorEl = document.getElementById('contactFormError');
 
             let hasError = false;
             const requiredFields = form.querySelectorAll('[required]');
             requiredFields.forEach(function(field) {
-                const errorEl = document.getElementById(field.id + 'Error');
+                const fieldError = document.getElementById(field.id + 'Error');
                 if (!field.value.trim()) {
                     field.classList.add('error');
-                    if (errorEl) errorEl.classList.add('show');
+                    if (fieldError) fieldError.classList.add('show');
                     hasError = true;
                 } else {
                     field.classList.remove('error');
-                    if (errorEl) errorEl.classList.remove('show');
+                    if (fieldError) fieldError.classList.remove('show');
                 }
             });
 
             if (hasError) return;
 
-            submitButton.disabled = true;
+            errorEl.classList.remove('show');
+            submitButton.classList.add('loading');
             submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
 
             fetch(form.action, {
                 method: 'POST',
@@ -148,13 +152,17 @@
                 return response.json();
             })
             .then(function() {
+                submitButton.classList.remove('loading');
+                submitButton.classList.add('btn-success');
+                submitButton.textContent = 'Sent ✓';
                 form.style.display = 'none';
                 document.getElementById('contactConfirmation').classList.add('show');
             })
             .catch(function() {
-                alert(errorText);
+                submitButton.classList.remove('loading');
                 submitButton.disabled = false;
                 submitButton.textContent = originalText;
+                errorEl.classList.add('show');
             });
         });
 
