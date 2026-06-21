@@ -53,7 +53,7 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 .btn:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 .btn-orange { background: linear-gradient(90deg, var(--accent-orange), #ff8533); color: var(--text-white); box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4); }
 .btn-orange:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--accent-orange); }
-.btn-outline { background: transparent; color: var(--text-white); border: 2px solid var(--accent-orange); backdrop-filter: blur(10px); }
+.btn-outline { background: transparent; color: var(--text-white); border: 2px solid var(--accent-orange); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .btn-outline:hover { background: rgba(255, 106, 0, 0.8); box-shadow: 0 0 20px var(--accent-orange); }
 
 .scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 3; cursor: pointer; animation: bounce 2s infinite; }
