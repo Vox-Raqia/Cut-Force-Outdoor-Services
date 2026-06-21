@@ -46,43 +46,14 @@
             </div>
             <p class="text-center mb-l text-muted">Prefer not to use forms? You can also call or text anytime.</p>
 
-            <div class="form-error-message" id="contactFormError">Sorry, the message could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.</div>
+            <div class="cta-block">
+                <p>Send me an email directly — I usually reply within a few hours.</p>
+                <a href="mailto:carl@cutforceoutdoorservices.ca?subject=Inquiry%20from%20Cut%20Force%20Website" class="btn btn-orange btn-full">Email Carl</a>
+            </div>
 
-            <form class="contact-form" action="https://formsubmit.co/carl@cutforceoutdoorservices.ca" method="POST" id="contactForm">
-                <input type="hidden" name="_subject" value="New contact message - Cut Force Outdoor Services">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" class="hidden">
-
-                <div class="form-group">
-                    <label for="contactName">Name *</label>
-                    <input type="text" id="contactName" name="name" required placeholder="Your full name">
-                    <span class="field-error" id="nameError">Please enter your name.</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="contactPhone">Phone *</label>
-                    <input type="tel" id="contactPhone" name="phone" required placeholder="604-XXX-XXXX">
-                    <span class="field-error" id="phoneError">Please enter your phone number.</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="contactMessage">Message *</label>
-                    <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
-                    <span class="field-error" id="messageError">Please enter a message.</span>
-                </div>
-
-                <button type="submit" class="btn btn-orange btn-full">Send Message</button>
-            </form>
-
-            <div class="confirmation" id="contactConfirmation">
-                <h3>Message sent!</h3>
-                <p>Thank you for reaching out. I'll get back to you as soon as I can.</p>
-                <p><strong>Phone: 604-206-8586</strong></p>
-                <div class="quick-contact mt-l">
-                    <a href="tel:604-206-8586" class="call-link">📞 Call</a>
-                    <a href="sms:604-206-8586" class="text-link">💬 Text</a>
-                </div>
+            <div class="quick-contact mb-l" style="margin-top: 32px;">
+                <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
+                <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
             </div>
         </div>
     </section>
@@ -112,66 +83,6 @@
             nav.style.display = isOpen ? 'none' : 'block';
             menuToggle.setAttribute('aria-expanded', !isOpen);
             menuToggle.textContent = isOpen ? '☰' : '✕';
-        });
-
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const submitButton = form.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            const errorEl = document.getElementById('contactFormError');
-
-            let hasError = false;
-            const requiredFields = form.querySelectorAll('[required]');
-            requiredFields.forEach(function(field) {
-                const fieldError = document.getElementById(field.id + 'Error');
-                if (!field.value.trim()) {
-                    field.classList.add('error');
-                    if (fieldError) fieldError.classList.add('show');
-                    hasError = true;
-                } else {
-                    field.classList.remove('error');
-                    if (fieldError) fieldError.classList.remove('show');
-                }
-            });
-
-            if (hasError) return;
-
-            errorEl.classList.remove('show');
-            submitButton.classList.add('loading');
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            })
-            .then(function(response) {
-                if (!response.ok) throw new Error('Form submission failed');
-                return response.json();
-            })
-            .then(function() {
-                submitButton.classList.remove('loading');
-                submitButton.classList.add('btn-success');
-                submitButton.textContent = 'Sent ✓';
-                form.style.display = 'none';
-                document.getElementById('contactConfirmation').classList.add('show');
-            })
-            .catch(function() {
-                submitButton.classList.remove('loading');
-                submitButton.disabled = false;
-                submitButton.textContent = originalText;
-                errorEl.classList.add('show');
-            });
-        });
-
-        document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(function(el) {
-            el.addEventListener('input', function() {
-                this.classList.remove('error');
-                const err = document.getElementById(this.id + 'Error');
-                if (err) err.classList.remove('show');
-            });
         });
     </script>
 </body>
