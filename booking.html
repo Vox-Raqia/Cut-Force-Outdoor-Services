@@ -13,6 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request a Quote | Cut Force: Outdoor Services | Hope, BC</title>
     <meta name="description" content="Send a quick quote request for brush clearing, yard cleanups, and exterior services in Hope, BC.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Request a Quote | Cut Force: Outdoor Services | Hope, BC">
+    <meta property="og:description" content="Send a quick quote request for brush clearing, yard cleanups, and exterior services in Hope, BC.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cutforceoutdoorservices.ca/booking.html">
+    <meta property="og:image" content="https://cutforceoutdoorservices.ca/img/hero-bg.png">
+    
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -64,19 +72,19 @@
 
                 <div class="form-group">
                     <label for="bookingName">Name *</label>
-                    <input type="text" id="bookingName" name="customerName" required placeholder="Your full name">
+                    <input type="text" id="bookingName" name="customerName" required placeholder="Your full name" aria-describedby="nameError">
                     <span class="field-error" id="nameError">Please enter your name.</span>
                 </div>
 
                 <div class="form-group">
                     <label for="bookingPhone">Phone *</label>
-                    <input type="tel" id="bookingPhone" name="customerPhone" required placeholder="604-XXX-XXXX">
+                    <input type="tel" id="bookingPhone" name="customerPhone" required placeholder="604-XXX-XXXX" aria-describedby="phoneError">
                     <span class="field-error" id="phoneError">Please enter your phone number.</span>
                 </div>
 
                 <div class="form-group">
                     <label for="serviceArea">Area *</label>
-                    <select id="serviceArea" name="serviceArea" required>
+                    <select id="serviceArea" name="serviceArea" required aria-describedby="areaError">
                         <option value="">Select your area</option>
                         <option value="Hope">Hope</option>
                         <option value="Silver Creek">Silver Creek</option>
@@ -91,7 +99,7 @@
 
                 <div class="form-group">
                     <label for="notes">What do you need done? *</label>
-                    <textarea id="notes" name="notes" rows="4" required placeholder="Describe the job..."></textarea>
+                    <textarea id="notes" name="notes" rows="4" required placeholder="Describe the job..." aria-describedby="notesError"></textarea>
                     <span class="field-error" id="notesError">Please describe what you need done.</span>
                 </div>
 
@@ -123,8 +131,7 @@
             <p class="footer-text footer-phone">604-206-8586</p>
             <p class="footer-text">Cut Force Outdoor Services</p>
             <p class="footer-text">Practical outdoor work for real properties in Hope, BC.</p>
-            <p class="footer-text">Solo operator. Honest work. Clear communication.</p>
-            <p class="footer-text">Serving Hope, Silver Creek, Kawkawa Lake, Flood Hope Road, Laidlaw, and nearby areas.</p>
+            <p class="footer-text"><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a></p>
             <p class="footer-text">&copy; 2026 Cut Force: Outdoor Services — All rights reserved.</p>
         </div>
     </footer>

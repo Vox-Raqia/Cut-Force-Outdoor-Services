@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Cut Force Outdoor Services</title>
+    <meta name="description" content="Terms of service for Cut Force Outdoor Services - outdoor work in Hope, BC.">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-short">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Terms of Service</h1>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <section class="services">
+            <div class="container">
+                <h2>Service Agreement</h2>
+                <p>By requesting services from Cut Force Outdoor Services, you agree to the following terms:</p>
+
+                <h2>Quotes & Estimates</h2>
+                <ul class="service-area-list">
+                    <li>Quotes are provided based on information you provide. Final pricing may vary if job scope changes.</li>
+                    <li>We reserve the right to decline any job that presents safety concerns or is outside our capabilities.</li>
+                    <li>No deposit is required. Payment is due upon completion of work.</li>
+                </ul>
+
+                <h2>Scheduling & Timing</h2>
+                <ul class="service-area-list">
+                    <li>We provide estimated time windows based on weather and workload.</li>
+                    <li>Scheduling is subject to change due to weather conditions or equipment availability.</li>
+                    <li>You will be notified of any significant scheduling changes.</li>
+                </ul>
+
+                <h2>Safety & Access</h2>
+                <ul class="service-area-list">
+                    <li>You must provide safe access to the work area.</li>
+                    <li>Please inform us of any hazards including metal, wire, or debris in brush areas.</li>
+                    <li>We reserve the right to pause work if conditions become unsafe.</li>
+                </ul>
+
+                <h2>Liability</h2>
+                <ul class="service-area-list">
+                    <li>We carry basic liability insurance. Proof available upon request.</li>
+                    <li>We are not responsible for damage to underground utilities not properly marked.</li>
+                    <li>Customer assumes liability for proper disposal of removed materials where required.</li>
+                </ul>
+
+                <h2>Limitations</h2>
+                <ul class="service-area-list">
+                    <li>We do not perform hazardous tree removal, climbing work, or stump grinding.</li>
+                    <li>We do not offer emergency storm response services.</li>
+                    <li>Rigging or specialized arborist work requires advanced equipment we don't currently carry.</li>
+                </ul>
+
+                <h2>Contact</h2>
+                <p>Questions about these terms? Call or text anytime.</p>
+                <p><strong>Phone:</strong> 604-206-8586</p>
+
+                <div class="cta-block">
+                    <a href="contact.html" class="btn btn-orange"><span>Request a Quote</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text footer-phone">604-206-8586</p>
+            <p class="footer-text">Cut Force Outdoor Services</p>
+            <p class="footer-text">Practical outdoor work for real properties in Hope, BC.</p>
+            <p class="footer-text"><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a></p>
+            <p class="footer-text">&copy; 2026 Cut Force: Outdoor Services — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
+    </script>
+</body>
+</html>

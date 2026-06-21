@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Cut Force Outdoor Services</title>
+    <meta name="description" content="Privacy policy for Cut Force Outdoor Services - how we handle your information when you contact us about our outdoor services in Hope, BC.">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-short">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Privacy Policy</h1>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <section class="services">
+            <div class="container">
+                <h2>Information We Collect</h2>
+                <p>When you contact us through our website, we may collect the following information:</p>
+                <ul class="service-area-list">
+                    <li>Your name</li>
+                    <li>Your phone number</li>
+                    <li>Your location/service area</li>
+                    <li>Description of services needed</li>
+                    <li>Optional photos you choose to share</li>
+                </ul>
+
+                <h2>How We Use Your Information</h2>
+                <p>We use this information solely to:</p>
+                <ul class="service-area-list">
+                    <li>Provide you with a quote for our services</li>
+                    <li>Schedule and complete requested work</li>
+                    <li>Communicate with you about your service request</li>
+                </ul>
+
+                <h2>Data Storage & Protection</h2>
+                <p>Your information is handled through FormSubmit.co for form processing. We recommend reviewing their privacy policy for details on data handling. We do not store personal information on third-party servers beyond what is necessary for quote delivery.</p>
+
+                <h2>Your Rights</h2>
+                <p>You have the right to:</p>
+                <ul class="service-area-list">
+                    <li>Request deletion of your information from our records</li>
+                    <li>Ask questions about how your data is used</li>
+                    <li>Contact us anytime to update or remove your information</li>
+                </ul>
+
+                <h2>Contact Us</h2>
+                <p>If you have questions about this privacy policy or your data, please contact us:</p>
+                <p><strong>Phone:</strong> 604-206-8586<br>
+                <strong>Email:</strong> carl@cutforceoutdoorservices.ca</p>
+
+                <div class="cta-block">
+                    <a href="contact.html" class="btn btn-orange"><span>Request a Quote</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text footer-phone">604-206-8586</p>
+            <p class="footer-text">Cut Force Outdoor Services</p>
+            <p class="footer-text">Practical outdoor work for real properties in Hope, BC.</p>
+            <p class="footer-text"><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a></p>
+            <p class="footer-text">&copy; 2026 Cut Force: Outdoor Services — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
+    </script>
+</body>
+</html>
