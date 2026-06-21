@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Cut Force Outdoor Services | Hope, BC</title>
-    <meta name="description" content="Practical outdoor work for real properties in Hope, BC. Chainsaw work, brush clearing, and pressure washing done safely with straightforward tools.">
+    <title>Services | Cut Force Outdoor Services | Hope, BC</title>
+    <meta name="description" content="Brush clearing, yard cleanups, property recovery, exterior cleaning, and small-scale hauling in Hope, BC.">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-icon" aria-label="Cut Force Logo"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
-            <nav>
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
@@ -23,30 +27,30 @@
                     <li><a href="booking.html">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="phone-header">604-206-8586</div>
         </div>
     </header>
 
     <section class="hero" style="min-height: 50vh;">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Our Services</h1>
+            <h1>Services</h1>
             <p class="hero-tagline">Practical outdoor work for real properties in Hope, BC</p>
         </div>
     </section>
 
     <main id="main-content">
-        <!-- Chainsaw Work Section -->
         <section class="services" id="chainsaw-work">
             <div class="container">
-                <h2 class="text-center">Chainsaw Work</h2>
-                <p class="text-center margin-bottom">Small-to-medium tree and limb work done safely</p>
+                <div class="section-header">
+                    <h2>Chainsaw Work</h2>
+                    <p>Small-to-medium tree and limb work done safely.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" style="max-width: 800px; margin: 0 auto;">
                         <img src="img/service-chainsaw.png" alt="Chainsaw work in forest" loading="lazy">
                         <div class="service-card-content">
                             <p>This includes:</p>
-                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                            <ul class="service-area-list">
                                 <li>Cutting and removing small trees</li>
                                 <li>Limb removal</li>
                                 <li>Clearing fallen or problem branches</li>
@@ -59,17 +63,18 @@
             </div>
         </section>
 
-        <!-- Brush Clearing Section -->
-        <section class="services" id="brush-clearing">
+        <section class="services services-alt" id="brush-clearing">
             <div class="container">
-                <h2 class="text-center">Brush Clearing</h2>
-                <p class="text-center margin-bottom">Reduce fire risk and reclaim overgrown areas</p>
+                <div class="section-header">
+                    <h2>Brush Clearing</h2>
+                    <p>Reduce fire risk and reclaim overgrown areas.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" style="max-width: 800px; margin: 0 auto;">
                         <img src="img/service-brush.png" alt="Brush clearing with equipment" loading="lazy">
                         <div class="service-card-content">
                             <p>Brush clearing helps:</p>
-                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                            <ul class="service-area-list">
                                 <li>Remove dry, overgrown vegetation</li>
                                 <li>Reduce wildfire risk</li>
                                 <li>Open up pathways and usable space</li>
@@ -82,17 +87,18 @@
             </div>
         </section>
 
-        <!-- Pressure Washing Section -->
         <section class="services" id="pressure-washing">
             <div class="container">
-                <h2 class="text-center">Pressure Washing</h2>
-                <p class="text-center margin-bottom">Clean, restore, and refresh exterior surfaces</p>
+                <div class="section-header">
+                    <h2>Pressure Washing</h2>
+                    <p>Clean, restore, and refresh exterior surfaces.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" style="max-width: 800px; margin: 0 auto;">
                         <img src="img/service-pressure.png" alt="Pressure washing driveway" loading="lazy">
                         <div class="service-card-content">
                             <p>Pressure washing is ideal for:</p>
-                            <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                            <ul class="service-area-list">
                                 <li>Driveways</li>
                                 <li>Walkways</li>
                                 <li>Decks and patios</li>
@@ -106,15 +112,16 @@
             </div>
         </section>
 
-        <!-- What's Not Offered Section -->
-        <section class="services" id="not-offered">
+        <section class="services services-alt" id="not-offered">
             <div class="container">
-                <h2 class="text-center">What's Not Offered (Yet)</h2>
-                <p class="text-center margin-bottom">To keep expectations clear and honest</p>
+                <div class="section-header">
+                    <h2>What's Not Offered (Yet)</h2>
+                    <p>To keep expectations clear and honest.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card" style="max-width: 800px; margin: 0 auto;">
                         <div class="service-card-content">
-                            <ul style="margin-left: 1.5rem; color: var(--text-gray);">
+                            <ul class="service-area-list">
                                 <li>No hazardous tree removals</li>
                                 <li>No climbing or rigging work</li>
                                 <li>No stump grinding</li>
@@ -122,18 +129,19 @@
                                 <li>No emergency storm response</li>
                                 <li>Not fully insured yet (in progress)</li>
                             </ul>
-                            <p style="margin-top: 1rem;">If something is outside the current setup, you'll hear that upfront.</p>
+                            <p>If something is outside the current setup, you'll hear that upfront.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Tools Used Section -->
         <section class="services" id="tools">
             <div class="container">
-                <h2 class="text-center">Tools Used</h2>
-                <p class="text-center margin-bottom">Straightforward tools. Reliable results.</p>
+                <div class="section-header">
+                    <h2>Tools I Use</h2>
+                    <p>Simple tools. Reliable results.</p>
+                </div>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-card-content">
@@ -154,34 +162,39 @@
                         </div>
                     </div>
                 </div>
-                <p class="text-center margin-top">No overcomplication — just the essentials used with care.</p>
+                <p class="text-center mb-l" style="color: var(--text-gray);">No overcomplication — just the essentials used with care.</p>
             </div>
         </section>
 
-        <!-- Service Area Section -->
-        <section class="services" id="service-area">
+        <section class="services services-alt" id="service-area">
             <div class="container">
-                <h2 class="text-center">Service Area</h2>
-                <p class="text-center margin-bottom">Serving Hope, BC and the surrounding communities</p>
-                <p>Cut Force Outdoor Services is based in Hope, BC and provides practical outdoor work to nearby areas.<br><br>If you're close, chances are good I can help.</p>
-                <p class="margin-bottom"><strong>Primary service areas include:</strong></p>
-                <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray);">
+                <div class="section-header">
+                    <h2>Service Area</h2>
+                    <p>Serving Hope, BC and the surrounding communities.</p>
+                </div>
+                <p>Cut Force Outdoor Services is based in Hope, BC and provides practical outdoor work to nearby areas.</p>
+                <p class="mb-l"><strong>Primary service areas include:</strong></p>
+                <ul class="service-area-list">
                     <li>Hope, BC</li>
                     <li>Silver Creek</li>
                     <li>Kawkawa Lake</li>
                     <li>Flood Hope Road</li>
                     <li>Laidlaw</li>
-                    <li>Yale (optional — include if you want the radius to feel wider)</li>
+                    <li>Yale</li>
                 </ul>
-                <p class="text-center margin-top">If you're unsure whether your location is covered, just reach out — I'll let you know quickly and honestly.</p>
+                <p class="text-center mb-l" style="color: var(--text-gray);">If you're unsure whether your location is covered, just reach out — I'll let you know quickly and honestly.</p>
+                <div class="cta-block">
+                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Your Address</span></a>
+                </div>
             </div>
         </section>
 
-        <!-- Ready to Book Section -->
         <section class="services" id="ready-to-book">
             <div class="container">
-                <h2 class="text-center">Ready to Book?</h2>
-                <p class="text-center margin-bottom">If you've got outdoor work that needs doing — heavy, messy, or just too much to tackle alone — I'm here to help.</p>
+                <div class="section-header">
+                    <h2>Ready to Book?</h2>
+                    <p>If you've got outdoor work that needs doing — heavy, messy, or just too much to tackle alone — I'm here to help.</p>
+                </div>
                 <div class="text-center">
                     <a href="booking.html" class="btn btn-orange"><span>Book a Service</span></a>
                 </div>
@@ -199,5 +212,22 @@
             <p class="footer-text">&copy; 2026 Cut Force Outdoor Services — All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="sticky-action-bar" aria-label="Quick contact">
+        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
+        <a href="booking.html"><span class="bar-icon">📝</span> Quote</a>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
+    </script>
 </body>
 </html>

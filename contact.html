@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Cut Force Outdoor Services | Hope, BC</title>
-    <meta name="description" content="Contact Cut Force Outdoor Services in Hope, BC. Call 604-206-8586 or fill out our contact form.">
+    <meta name="description" content="Contact Cut Force Outdoor Services in Hope, BC. Call 604-206-8586 or send a message.">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-icon"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
-            <nav>
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                     <li><a href="booking.html">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="phone-header">604-206-8586</div>
         </div>
     </header>
 
@@ -29,44 +34,53 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>Contact Us</h1>
-            <p class="hero-tagline">We're Here to Help</p>
+            <p class="hero-tagline">We're here to help.</p>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="main-content">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Ready to restore your property? Contact us today.</p>
-            <p class="phone-large">604-206-8586</p>
-            <p>Hope, BC</p>
-            
+            <div class="quick-contact mb-l">
+                <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
+                <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
+            </div>
+            <p class="text-center mb-l" style="color: var(--text-gray);">Prefer not to use forms? You can also call or text anytime.</p>
+
             <form class="contact-form" action="https://formsubmit.co/carl@cutforceoutdoorservices.ca" method="POST" id="contactForm">
                 <input type="hidden" name="_subject" value="New contact message - Cut Force Outdoor Services">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" style="display:none">
+
                 <div class="form-group">
                     <label for="contactName">Name *</label>
                     <input type="text" id="contactName" name="name" required placeholder="Your full name">
+                    <span class="field-error" id="nameError">Please enter your name.</span>
                 </div>
-                <div class="form-group">
-                    <label for="contactEmail">Email *</label>
-                    <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
-                </div>
+
                 <div class="form-group">
                     <label for="contactPhone">Phone *</label>
                     <input type="tel" id="contactPhone" name="phone" required placeholder="604-XXX-XXXX">
+                    <span class="field-error" id="phoneError">Please enter your phone number.</span>
                 </div>
+
                 <div class="form-group">
                     <label for="contactMessage">Message *</label>
-                    <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+                    <textarea id="contactMessage" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    <span class="field-error" id="messageError">Please enter a message.</span>
                 </div>
-                <button type="submit" class="btn btn-orange">Send Message</button>
+
+                <button type="submit" class="btn btn-orange btn-full">Send Message</button>
             </form>
-            
+
             <div class="confirmation" id="contactConfirmation">
-                <h3>Message Sent!</h3>
-                <p>Thank you for your message. We will get back to you within 24 hours.</p>
+                <h3>Message sent!</h3>
+                <p>Thank you for reaching out. I'll get back to you as soon as I can.</p>
+                <p><strong>Phone: 604-206-8586</strong></p>
+                <div class="quick-contact mt-l">
+                    <a href="tel:604-206-8586" class="call-link">📞 Call</a>
+                    <a href="sms:604-206-8586" class="text-link">💬 Text</a>
+                </div>
             </div>
         </div>
     </section>
@@ -82,41 +96,75 @@
         </div>
     </footer>
 
+    <div class="sticky-action-bar" aria-label="Quick contact">
+        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
+        <a href="booking.html"><span class="bar-icon">📝</span> Quote</a>
+    </div>
+
     <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
 
-    const form = this;
-    const submitButton = form.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    const errorText = 'Sorry, the message could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.';
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            const errorText = 'Sorry, the message could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.';
 
-    submitButton.disabled = true;
-    submitButton.textContent = 'Sending...';
+            let hasError = false;
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(function(field) {
+                const errorEl = document.getElementById(field.id + 'Error');
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    if (errorEl) errorEl.classList.add('show');
+                    hasError = true;
+                } else {
+                    field.classList.remove('error');
+                    if (errorEl) errorEl.classList.remove('show');
+                }
+            });
 
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(function(response) {
-        if (!response.ok) {
-            throw new Error('Form submission failed');
-        }
-        return response.json();
-    })
-    .then(function() {
-        form.style.display = 'none';
-        document.getElementById('contactConfirmation').classList.add('show');
-    })
-    .catch(function() {
-        alert(errorText);
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
-    });
-});
+            if (hasError) return;
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function(response) {
+                if (!response.ok) throw new Error('Form submission failed');
+                return response.json();
+            })
+            .then(function() {
+                form.style.display = 'none';
+                document.getElementById('contactConfirmation').classList.add('show');
+            })
+            .catch(function() {
+                alert(errorText);
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            });
+        });
+
+        document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(function(el) {
+            el.addEventListener('input', function() {
+                this.classList.remove('error');
+                const err = document.getElementById(this.id + 'Error');
+                if (err) err.classList.remove('show');
+            });
+        });
     </script>
 </body>
 </html>

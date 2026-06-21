@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cut Force Outdoor Services | Hope, BC | Practical Outdoor Work</title>
-    <meta name="description" content="Outdoor work done right — safe, honest service for real homes in Hope, BC. Chainsaw work, brush clearing, and pressure washing.">
+    <title>Cut Force Outdoor Services | Brush Clearing & Property Recovery in Hope BC</title>
+    <meta name="description" content="Solo operator in Hope, BC offering brush clearing, yard cleanups, property recovery, and exterior services. Call or text for a fast quote.">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -13,215 +13,227 @@
 
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-icon" aria-label="Cut Force Logo"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
-            <nav>
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="booking.html">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="phone-header">604-206-8586</div>
         </div>
     </header>
 
+    <nav class="jump-menu" aria-label="Page sections">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#before-you-book">Before You Book</a>
+        <a href="#service-area">Service Area</a>
+        <a href="#gallery">Photos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <section class="hero" id="main-content">
         <div class="hero-overlay"></div>
-        <div class="forest-parallax"></div>
-        <div class="mist-layer"></div>
-        <div class="sawblade"></div>
-
         <div class="container hero-content">
-            <h1 class="hero-title">Outdoor work done right — safe, honest service for real homes in Hope, BC.</h1>
-            <p class="hero-tagline">Reliable chainsaw work, brush clearing, and pressure washing from a solo operator you can actually talk to.</p>
-            <p class="hero-description margin-bottom">Straightforward help for the jobs that are heavy, messy, or too risky to tackle alone.</p>
+            <h1 class="hero-title">Tough exterior cleanups &amp; property recovery in Hope, BC</h1>
+            <p class="hero-tagline">Solo operator offering brush clearing, yard cleanups, and exterior services.</p>
+            <p class="hero-description">Fast, honest, no-nonsense work. If it's overgrown, buried, or out of control — I can handle it.</p>
             <div class="hero-buttons">
-                <a href="booking.html" class="btn btn-orange"><span>Book a Service</span></a>
+                <a href="tel:604-206-8586" class="btn btn-orange"><span>Call for a Quick Quote</span></a>
+                <a href="sms:604-206-8586" class="btn btn-outline"><span>Text Me a Photo</span></a>
             </div>
-            <div class="scroll-indicator" onclick="document.querySelector('.services').scrollIntoView({behavior:'smooth'})">
-                <svg viewBox="0 0 24 24" aria-label="Scroll down"><path d="M12 16 L12 6"/><path d="M12 16 L8 12"/><path d="M12 16 L16 12"/></svg>
-            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+            <svg viewBox="0 0 24 24"><path d="M12 16 L12 6" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 16 L8 12" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 16 L16 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
         </div>
     </section>
 
-    <canvas id="sparkCanvas"></canvas>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">What I Do</h2>
-            <p class="text-center margin-bottom">Outdoor work done safely and responsibly</p>
-            <p class="text-center margin-bottom">Cut Force focuses on small-to-medium outdoor jobs that make your property cleaner, safer, and easier to maintain.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="img/service-chainsaw.png" alt="Chainsaw work in forest" loading="lazy">
-                    <div class="service-card-content"><h3>Chainsaw Work</h3><p>Limb and small tree removal, cutting fallen branches, and clearing problem spots — done with caution around structures.</p></div>
+    <main>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Services</h2>
+                    <p>Practical outdoor work for real properties in Hope, BC</p>
                 </div>
-                <div class="service-card">
-                    <img src="img/service-brush.png" alt="Brush clearing with equipment" loading="lazy">
-                    <div class="service-card-content"><h3>Brush Clearing</h3><p>Reduce overgrowth and fire-risk areas so your property stays safer and easier to maintain.</p></div>
-                </div>
-                <div class="service-card">
-                    <img src="img/service-pressure.png" alt="Pressure washing driveway" loading="lazy">
-                    <div class="service-card-content"><h3>Pressure Washing</h3><p>Restore clean, safer surfaces by removing moss, grime, and buildup from driveways, decks, and walkways.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services services-alt">
-        <div class="container">
-            <h2 class="text-center">Why Hire a Solo Operator?</h2>
-            <p class="text-center margin-bottom checklist-text">The person you talk to is the person who shows up</p>
-            <p class="text-center margin-bottom">When you hire Cut Force, you're not dealing with layers of staff, dispatchers, or salespeople. You're dealing with one person — the one who actually does the work.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Direct communication</h3><p>You talk directly to the person who does the work — no dispatchers, no middle layers.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Fair, grounded pricing</h3><p>Fair, grounded pricing — no overhead, no upsells, no surprises.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Flexible scheduling</h3><p>Flexible scheduling — quick decisions and easy coordination.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Accountability you can feel</h3><p>Accountability you can feel — reputation is built one property at a time.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Respect for your home</h3><p>Respect for your home — careful work, no rushing, no cutting corners.</p></div>
-                </div>
-            </div>
-            <p>A solo operator isn't a limitation — it's a guarantee of consistency, care, and pride in the work.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">Tools I Use</h2>
-            <p class="text-center margin-bottom">Simple tools, used properly, get reliable results — I focus on what I can do safely and well.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Pickup truck</h3><p>For hauling and cleanup.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Chainsaw</h3><p>For tree and limb work.</p></div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-content"><h3>Pressure washer</h3><p>For exterior cleaning.</p></div>
-                </div>
-            </div>
-            <p class="text-center margin-top">No overpromising. No pretending to be something bigger. Just solid work with the tools on hand.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">Before You Book</h2>
-            <p class="text-center margin-bottom">A quick checklist that helps everything go smoother</p>
-            <p class="text-center margin-bottom">A little information upfront helps make sure the job is safe, accurate, and efficient.</p>
-            <p class="text-center margin-bottom">Here's what helps most:</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-content">
-                        <h3>1. Send a photo of the job</h3>
-                        <p>A clear picture saves time and gives an accurate sense of the work needed.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="img/service-brush.png" alt="Brush clearing before and after" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Brush Clearing</h3>
+                            <p>Quick removal of overgrowth, blackberry, saplings, and brush that's taken over your yard or property.</p>
+                            <p class="good-for">Good for: reclaiming space, fire safety, property cleanup.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/service-chainsaw.png" alt="Chainsaw work and tree limb removal" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Yard Cleanups</h3>
+                            <p>Debris removal, raking, trimming, and general outdoor cleanup to get your property back under control.</p>
+                            <p class="good-for">Good for: move-outs, rentals, seasonal cleanups.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/service-pressure.png" alt="Pressure washing exterior surfaces" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Property Recovery</h3>
+                            <p>Turning neglected or abandoned outdoor spaces back into usable land.</p>
+                            <p class="good-for">Good for: estates, foreclosures, long-vacant homes.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/service-pressure.png" alt="Pressure washing driveway and deck" loading="lazy">
+                        <div class="service-card-content">
+                            <h3>Exterior Cleaning</h3>
+                            <p>Pressure washing, moss removal, and exterior surface cleaning.</p>
+                            <p class="good-for">Good for: driveways, siding, decks, walkways.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-content">
+                            <h3>Small-Scale Hauling</h3>
+                            <p>Removal of green waste, branches, and light debris.</p>
+                            <p class="good-for">Good for: post-storm cleanup, yard waste piles.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card-content">
-                        <h3>2. Describe access to the area</h3>
-                        <p class="checklist-paragraph">Let me know if there are:</p>
-                        <ul class="checklist-list">
-                            <li>gates</li>
-                            <li>narrow paths</li>
-                            <li>steep slopes</li>
-                            <li>tight corners</li>
-                            <li>limited parking</li>
-                        </ul>
-                        <p>This helps plan the safest approach.</p>
+                <div class="cta-block">
+                    <p>See something you need? Call or text anytime.</p>
+                    <a href="tel:604-206-8586" class="btn btn-orange"><span>Call Now</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-outline"><span>Text a Photo</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services services-alt" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Simple, straightforward, no pressure.</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Send a photo or describe the job</h3>
+                        <p>Text me what you're dealing with — photos help a lot.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Get a simple quote + time window</h3>
+                        <p>No upsells, no surprises. Straightforward pricing.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>I show up and get it done</h3>
+                        <p>Fast, clean, and reliable work. I'll walk you through the results.</p>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-card-content">
-                        <h3>3. Mention any hazards</h3>
-                        <p class="checklist-paragraph">Examples include:</p>
-                        <ul class="checklist-list">
-                            <li>loose soil</li>
-                            <li>unstable branches</li>
-                            <li>nearby power lines</li>
-                            <li>wasp nests</li>
-                            <li>pets on the property</li>
-                        </ul>
-                        <p>Safety comes first — for you, your property, and me.</p>
-                    </div>
+                <div class="cta-block">
+                    <p>Ready to get something off your to-do list?</p>
+                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Me a Photo</span></a>
                 </div>
-                <div class="service-card">
-                    <div class="service-card-content">
-                        <h3>4. Let me know if debris needs hauling</h3>
-                        <p>Some jobs create more material than others.<br>
-                        Knowing this ahead of time helps plan cleanup and disposal.</p>
-                    </div>
+            </div>
+        </section>
+
+        <section class="services" id="before-you-book">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Before You Book</h2>
+                    <p>A few things that help the job go smoothly.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-card-content">
-                        <h3>5. Share your preferred timing</h3>
-                        <p>If you have a specific day or window in mind, mention it.<br>
-                        Scheduling is flexible, but clear expectations help everything run smoothly.</p>
+                <ul class="before-book-list">
+                    <li>
+                        <strong>Access</strong>
+                        <p>I need safe access to the area.</p>
+                    </li>
+                    <li>
+                        <strong>Debris</strong>
+                        <p>Let me know if there's metal, wire, or junk hidden in brush.</p>
+                    </li>
+                    <li>
+                        <strong>Timing</strong>
+                        <p>Weather and daylight affect scheduling — I'll give you a realistic window.</p>
+                    </li>
+                    <li>
+                        <strong>Estimates</strong>
+                        <p>Photos help me give accurate quotes.</p>
+                    </li>
+                </ul>
+                <p class="text-center mb-l" style="color: var(--text-gray);">If you're not sure, just ask. I'll tell you straight if it's a fit.</p>
+                <div class="cta-block">
+                    <p>Ready when you are.</p>
+                    <a href="booking.html" class="btn btn-orange"><span>Request a Quote</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-outline"><span>Text Your Address</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services services-alt" id="service-area">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Service Area</h2>
+                    <p>Based in Hope, BC and serving surrounding communities.</p>
+                </div>
+                <ul class="service-area-list">
+                    <li>Hope, BC</li>
+                    <li>Silver Creek</li>
+                    <li>Kawkawa Lake</li>
+                    <li>Flood Hope Road</li>
+                    <li>Laidlaw</li>
+                    <li>Yale</li>
+                </ul>
+                <p class="text-center mb-l" style="color: var(--text-gray);">Other nearby areas on request.</p>
+                <div class="cta-block">
+                    <p>Not sure if you're in range?</p>
+                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Your Address</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Photos</h2>
+                    <p>Real work, real results.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/service-brush.png" alt="Overgrown yard before brush clearing" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/service-brush.png" alt="Same yard after brush clearing cleanup" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/service-pressure.png" alt="Driveway before pressure washing" loading="lazy">
                     </div>
                 </div>
             </div>
-            <p class="text-center margin-top">Clear info means a clear quote</p>
-            <p class="text-center margin-bottom">The more details you provide upfront, the more accurate and fair the quote will be — no surprises, no guesswork.</p>
-            <p class="text-center margin-bottom">If anything is unclear, I'll walk you through it — no stress.</p>
-        </div>
-    </section>
+        </section>
 
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">Straightforward Pricing</h2>
-            <p class="text-center margin-bottom">Fair, simple, and honest</p>
-            <p class="text-center margin-bottom">Pricing at Cut Force Outdoor Services is built on clarity — no hidden fees, no surprise add‑ons, and no confusing packages.</p>
-            <p class="text-center margin-bottom">Every quote is based on three things:</p>
-            <ol class="pricing-list">
-                <li><strong>Time</strong><br>How long the job will realistically take, including setup and cleanup.</li>
-                <li><strong>Difficulty</strong><br>Some tasks are simple.<br>Some require more caution, more effort, or more precision.<br>The quote reflects the actual work involved — nothing more.</li>
-                <li><strong>Disposal Needs</strong><br>If debris needs to be hauled away, the quote will include the time and effort required to load, transport, and dispose of it properly.</li>
-            </ol>
-            <p class="text-center margin-bottom">No upsells. No pressure. No nonsense.</p>
-            <p class="text-center margin-bottom">You'll never be pushed into services you don't need.</p>
-            <p class="text-center margin-bottom">If something is outside the current equipment or skill level, you'll hear that upfront — not after the job starts.</p>
-            <p class="text-center margin-bottom"><strong>Clear quotes, clear expectations</strong></p>
-            <p class="text-center margin-bottom">Most small jobs fit into a few hours of work. Larger brush clearing or debris hauling can take longer — but you'll always know the expected cost before I start.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">Service Area</h2>
-            <p>Based in Hope, BC and serving the surrounding communities. If you're nearby, I can likely help — just ask.</p>
-            <p class="margin-bottom"><strong>Primary service areas include:</strong></p>
-            <ul class="service-area-list">
-                <li>Hope, BC</li>
-                <li>Silver Creek</li>
-                <li>Kawkawa Lake</li>
-                <li>Flood Hope Road</li>
-                <li>Laidlaw</li>
-                <li>Yale (optional — include if you want the radius to feel wider)</li>
-            </ul>
-            <p class="text-center margin-top">If you're unsure whether your location is covered, just reach out — I'll let you know quickly and honestly.</p>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="text-center">Ready to get something off your to-do list?</h2>
-            <p class="text-center margin-bottom">Whether it's clearing brush, cutting branches, or cleaning exterior surfaces, I'm here to help.</p>
-            <div class="text-center">
-                <a href="booking.html" class="btn btn-orange"><span>Book a Service</span></a>
+        <section class="services services-alt" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact</h2>
+                    <p>Get in touch — call, text, or send a quick quote request.</p>
+                </div>
+                <div class="quick-contact">
+                    <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
+                    <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
+                </div>
+                <div class="cta-block">
+                    <p>Prefer a form?</p>
+                    <a href="booking.html" class="btn btn-orange"><span>Request a Quote</span></a>
+                    <a href="contact.html" class="btn btn-outline"><span>Send a Message</span></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -230,78 +242,25 @@
             <p class="footer-text">Practical outdoor work for real properties in Hope, BC.</p>
             <p class="footer-text">Solo operator. Honest work. Clear communication.</p>
             <p class="footer-text">Serving Hope, Silver Creek, Kawkawa Lake, Flood Hope Road, Laidlaw, and nearby areas.</p>
-            <p class="footer-text">Proudly serving Hope, BC with safe, honest outdoor work.</p>
             <p class="footer-text">&copy; 2026 Cut Force Outdoor Services — All rights reserved.</p>
         </div>
     </footer>
 
+    <div class="sticky-action-bar" aria-label="Quick contact">
+        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
+        <a href="booking.html"><span class="bar-icon">📝</span> Quote</a>
+    </div>
+
     <script>
-// SPARK TRAIL EFFECT
-let animationId;
-const canvas = document.getElementById('sparkCanvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let sparks = [];
-
-document.addEventListener('mousemove', (e) => {
-    for (let i = 0; i < 3; i++) {
-        sparks.push({
-            x: e.clientX, y: e.clientY,
-            size: Math.random() * 3 + 1,
-            life: 30,
-            dx: (Math.random() - 0.5) * 4,
-            dy: (Math.random() - 0.5) * 4,
-            color: `rgba(255,106,0,${Math.random()})`
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
         });
-    }
-});
-
-function sparkBurst(x, y) {
-    for (let i = 0; i < 20; i++) {
-        sparks.push({
-            x, y,
-            size: Math.random() * 3 + 1,
-            life: 20,
-            dx: (Math.random() - 0.5) * 8,
-            dy: (Math.random() - 0.5) * 8,
-            color: `rgba(255,106,0,${Math.random()})`
-        });
-    }
-}
-
-document.querySelectorAll('.btn-orange, .btn-outline').forEach(btn => {
-    btn.addEventListener('mouseenter', (e) => {
-        const rect = btn.getBoundingClientRect();
-        sparkBurst(rect.left + rect.width / 2, rect.top + rect.height / 2);
-    });
-});
-
-function animate() {
-    if (sparks.length === 0) {
-        animationId = requestAnimationFrame(animate);
-        return;
-    }
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    sparks.forEach((spark, i) => {
-        spark.x += spark.dx; spark.y += spark.dy; spark.life--;
-        ctx.beginPath(); ctx.arc(spark.x, spark.y, spark.size, 0, Math.PI * 2);
-        ctx.fillStyle = spark.color; ctx.fill();
-        if (spark.life <= 0) sparks.splice(i, 1);
-    });
-    animationId = requestAnimationFrame(animate);
-}
-animate();
-
-// PARALLAX SCROLL
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const mist = document.querySelector('.mist-layer');
-    const forest = document.querySelector('.forest-parallax');
-    if (mist) mist.style.transform = `translateX(${scrollY * 0.05}px)`;
-    if (forest) forest.style.transform = `translateY(${scrollY * 0.15}px)`;
-});
     </script>
 </body>
 </html>

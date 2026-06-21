@@ -3,87 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Service | Cut Force Outdoor Services | Hope, BC</title>
-    <meta name="description" content="Schedule property recovery and exterior cleaning services in Hope, BC.">
+    <title>Request a Quote | Cut Force Outdoor Services | Hope, BC</title>
+    <meta name="description" content="Send a quick quote request for brush clearing, yard cleanups, and exterior services in Hope, BC.">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="container header-container">
-            <div class="logo"><div class="logo-icon"></div><span>CUT FORCE OUTDOOR SERVICES</span></div>
-            <nav>
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="phone-header">604-206-8586</div>
         </div>
     </header>
 
     <section class="hero" style="min-height: 50vh;">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1>Book a Service</h1>
-            <p class="hero-tagline">Schedule Your Property Restoration</p>
+            <h1>Request a Quote</h1>
+            <p class="hero-tagline">Send a photo, get a straight answer.</p>
         </div>
     </section>
 
-    <section class="booking">
+    <section class="contact" id="main-content">
         <div class="container">
-            <h2 class="text-center">Service Request Form</h2>
+            <div class="quick-contact mb-l">
+                <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
+                <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
+            </div>
+            <p class="text-center mb-l" style="color: var(--text-gray);">Prefer not to use forms? Give me a call or send a text anytime.</p>
+
             <form class="booking-form" id="bookingForm" action="https://formsubmit.co/carl@cutforceoutdoorservices.ca" method="POST">
-                <input type="hidden" name="_subject" value="New booking request - Cut Force Outdoor Services">
+                <input type="hidden" name="_subject" value="New quick quote request - Cut Force Outdoor Services">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="text" name="_honey" style="display:none">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="bookingName">Customer Name *</label>
-                        <input type="text" id="bookingName" name="customerName" required placeholder="Your full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="bookingEmail">Email Address *</label>
-                        <input type="email" id="bookingEmail" name="customerEmail" required placeholder="your@email.com">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="bookingPhone">Phone Number *</label>
-                        <input type="tel" id="bookingPhone" name="customerPhone" required placeholder="604-XXX-XXXX">
-                    </div>
-                    <div class="form-group">
-                        <label for="serviceType">Service Type *</label>
-                        <select id="serviceType" name="serviceType" required>
-                            <option value="">Select a service</option>
-                            <option value="chainsaw">Chainsaw Work</option>
-                            <option value="brush">Brush Clearing</option>
-                            <option value="pressure">Pressure Washing</option>
-                            <option value="exterior">Exterior Cleanup</option>
-                            <option value="storm">Storm Debris Removal</option>
-                            <option value="recovery">Property Recovery</option>
-                        </select>
-                    </div>
-                </div>
+
                 <div class="form-group">
-                    <label for="serviceDate">Preferred Service Date *</label>
-                    <input type="date" id="serviceDate" name="serviceDate" required>
+                    <label for="bookingName">Name *</label>
+                    <input type="text" id="bookingName" name="customerName" required placeholder="Your full name">
+                    <span class="field-error" id="nameError">Please enter your name.</span>
                 </div>
+
                 <div class="form-group">
-                    <label for="notes">Additional Notes</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Any special requirements..."></textarea>
+                    <label for="bookingPhone">Phone *</label>
+                    <input type="tel" id="bookingPhone" name="customerPhone" required placeholder="604-XXX-XXXX">
+                    <span class="field-error" id="phoneError">Please enter your phone number.</span>
                 </div>
-                <button type="submit" class="btn btn-orange">Submit Request</button>
+
+                <div class="form-group">
+                    <label for="serviceArea">Area *</label>
+                    <select id="serviceArea" name="serviceArea" required>
+                        <option value="">Select your area</option>
+                        <option value="Hope">Hope</option>
+                        <option value="Silver Creek">Silver Creek</option>
+                        <option value="Kawkawa Lake">Kawkawa Lake</option>
+                        <option value="Flood Hope Road">Flood Hope Road</option>
+                        <option value="Laidlaw">Laidlaw</option>
+                        <option value="Yale">Yale</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="field-error" id="areaError">Please select your area.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">What do you need done? *</label>
+                    <textarea id="notes" name="notes" rows="4" required placeholder="Describe the job..."></textarea>
+                    <span class="field-error" id="notesError">Please describe what you need done.</span>
+                </div>
+
+                <div class="form-group">
+                    <label>Photos (optional but helpful)</label>
+                    <div class="photo-upload">
+                        <input type="file" name="photos" accept="image/*" multiple>
+                        <span class="photo-upload-label">Tap to upload photos of the job</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-orange btn-full">Send Request</button>
             </form>
+
             <div class="confirmation" id="bookingConfirmation">
-                <h3>Request Submitted!</h3>
-                <p>Thank you! We will contact you at <span id="confirmPhone"></span> for <span id="confirmService"></span>.</p>
+                <h3>Thanks — your request is in.</h3>
+                <p>I'll get back to you as soon as I can. If it's urgent, feel free to call or text.</p>
                 <p><strong>Phone: 604-206-8586</strong></p>
-                <button class="btn btn-outline" onclick="location.reload()">Book Another Service</button>
+                <div class="quick-contact mt-l">
+                    <a href="tel:604-206-8586" class="call-link">📞 Call</a>
+                    <a href="sms:604-206-8586" class="text-link">💬 Text</a>
+                </div>
             </div>
         </div>
     </section>
@@ -99,45 +119,75 @@
         </div>
     </footer>
 
+    <div class="sticky-action-bar" aria-label="Quick contact">
+        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
+        <a href="index.html"><span class="bar-icon">🏠</span> Home</a>
+    </div>
+
     <script>
-document.getElementById('bookingForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
 
-    const form = this;
-    const submitButton = form.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    const errorText = 'Sorry, the request could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.';
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            const errorText = 'Sorry, the request could not be sent right now. Please email carl@cutforceoutdoorservices.ca or call 604-206-8586.';
 
-    submitButton.disabled = true;
-    submitButton.textContent = 'Sending...';
+            let hasError = false;
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(function(field) {
+                const errorEl = document.getElementById(field.id + 'Error');
+                if (!field.value.trim()) {
+                    field.classList.add('error');
+                    if (errorEl) errorEl.classList.add('show');
+                    hasError = true;
+                } else {
+                    field.classList.remove('error');
+                    if (errorEl) errorEl.classList.remove('show');
+                }
+            });
 
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: {
-            'Accept': 'application/json'
-        }
-    })
-    .then(function(response) {
-        if (!response.ok) {
-            throw new Error('Form submission failed');
-        }
-        return response.json();
-    })
-    .then(function() {
-        const phone = document.getElementById('bookingPhone').value;
-        const service = document.getElementById('serviceType').options[document.getElementById('serviceType').selectedIndex].text;
-        document.getElementById('confirmPhone').textContent = phone;
-        document.getElementById('confirmService').textContent = service;
-        form.style.display = 'none';
-        document.getElementById('bookingConfirmation').classList.add('show');
-    })
-    .catch(function() {
-        alert(errorText);
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
-    });
-});
+            if (hasError) return;
+
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function(response) {
+                if (!response.ok) throw new Error('Form submission failed');
+                return response.json();
+            })
+            .then(function() {
+                form.style.display = 'none';
+                document.getElementById('bookingConfirmation').classList.add('show');
+            })
+            .catch(function() {
+                alert(errorText);
+                submitButton.disabled = false;
+                submitButton.textContent = originalText;
+            });
+        });
+
+        document.querySelectorAll('#bookingForm input, #bookingForm textarea, #bookingForm select').forEach(function(el) {
+            el.addEventListener('input', function() {
+                this.classList.remove('error');
+                const err = document.getElementById(this.id + 'Error');
+                if (err) err.classList.remove('show');
+            });
+        });
     </script>
 </body>
 </html>
