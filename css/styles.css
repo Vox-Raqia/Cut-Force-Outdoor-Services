@@ -79,7 +79,13 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 
 /* Services Section */
 .services { padding: 4rem 0; background: var(--bg-primary); }
+.services-alt { background: var(--bg-secondary); }
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.checklist-text { font-size: 1.25rem; color: var(--accent-green); }
+.checklist-list, .pricing-list { list-style-position: inside; margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray); }
+.checklist-list li, .pricing-list li { margin-bottom: 0.25rem; }
+.checklist-paragraph { margin-bottom: 0.75rem; }
+.service-area-list { margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text-gray); }
 .service-card { background: var(--bg-secondary); border: 1px solid var(--accent-orange); transition: transform 0.3s, box-shadow 0.3s; overflow: hidden; position: relative; }
 .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(255, 106, 0, 0.3); }
 .service-card-content { padding: 1.5rem; }
