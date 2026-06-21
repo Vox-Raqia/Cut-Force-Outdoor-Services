@@ -218,3 +218,7 @@ footer { background: var(--bg-primary); border-top: 2px solid var(--accent-orang
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(-10px); }
 }
+
+/* Utility */
+.hidden { display: none; }
+.service-card-narrow { max-width: 800px; margin: 0 auto; }
