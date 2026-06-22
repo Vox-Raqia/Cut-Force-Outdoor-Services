@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Statement | Cut Force Outdoor Services</title>
+    <meta name="description" content="Accessibility commitment for Cut Force Outdoor Services - our commitment to accessible service for customers in Hope, BC.">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon" aria-label="Cut Force Logo"></div>
+                <span>CUT FORCE</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-short">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Accessibility Statement</h1>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <section class="services">
+            <div class="container">
+                <h2>Our Commitment</h2>
+                <p>Cut Force Outdoor Services is committed to providing equal access to our services for all customers, including those with disabilities. We strive to meet the accessibility standards outlined in the Accessible British Columbia Act.</p>
+
+                <h2>Website Accessibility</h2>
+                <p>This website follows Web Content Accessibility Guidelines (WCAG 2.1 Level AA) where possible, including:</p>
+                <ul class="service-area-list">
+                    <li>Skip links for keyboard navigation</li>
+                    <li>Semantic HTML structure for screen readers</li>
+                    <li>Descriptive alt text for images</li>
+                    <li>Sufficient color contrast ratios</li>
+                    <li>Resizable text without loss of functionality</li>
+                    <li>Clear heading structure and focus indicators</li>
+                </ul>
+
+                <h2>Service Accessibility</h2>
+                <p>We are committed to accommodating customers with disabilities:</p>
+                <ul class="service-area-list">
+                    <li><strong>Communication:</strong> We offer phone, text, and email options. If you need alternative communication methods, please let us know.</li>
+                    <li><strong>Site access:</strong> We will work with you to assess accessibility needs at your property. Please inform us of any specific requirements when booking.</li>
+                    <li><strong>Service modifications:</strong> Where reasonable, we will adjust our approach to accommodate accessibility needs.</li>
+                </ul>
+
+                <h2>Feedback &amp; Contact</h2>
+                <p>If you encounter accessibility barriers on our website or have accessibility questions about our services, please contact us:</p>
+                <p><strong>Phone:</strong> 604-206-8586<br>
+                <strong>Email:</strong> carl@cutforceoutdoorservices.ca</p>
+                <p>We will respond within 2 business days. If you require accommodations, we will work with you to remove barriers promptly.</p>
+
+                <div class="cta-block">
+                    <a href="contact.html" class="btn btn-orange"><span>Contact Us</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text footer-phone">604-206-8586</p>
+            <p class="footer-text">Cut Force Outdoor Services</p>
+            <p class="footer-text">Practical outdoor work for real properties in Hope, BC.</p>
+            <p class="footer-text"><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> | <a href="accessibility.html">Accessibility</a> | <a href="accessibility.html">Accessibility</a></p>
+            <p class="footer-text">&copy; 2026 Cut Force: Outdoor Services — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', function() {
+            const isOpen = nav.style.display === 'block';
+            nav.style.display = isOpen ? 'none' : 'block';
+            menuToggle.setAttribute('aria-expanded', !isOpen);
+            menuToggle.textContent = isOpen ? '☰' : '✕';
+        });
+    </script>
+</body>
+</html>
