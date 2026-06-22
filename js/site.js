@@ -56,7 +56,7 @@
     banner.innerHTML =
       '<div class="cf-consent-inner">' +
         '<p class="cf-consent-text">' +
-          'This site uses Microsoft Clarity analytics to understand how visitors use the site. ' +
+          'This site uses Microsoft Clarity and Microsoft Advertising to understand how visitors use the site. ' +
           'No personal data is stored. You can change your preference anytime in the footer.' +
         '</p>' +
         '<div class="cf-consent-actions">' +
