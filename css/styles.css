@@ -89,7 +89,7 @@ nav a:focus { outline: 2px solid var(--accent-green); outline-offset: 2px; }
 .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
 /* Jump Menu */
-.jump-menu { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0; -webkit-overflow-scrolling: touch; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.jump-menu { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .jump-menu a { white-space: nowrap; padding: 10px 16px; background: var(--bg-secondary); border: 1px solid var(--accent-orange); border-radius: 20px; color: var(--text-white); text-decoration: none; font-size: 0.9rem; font-weight: 600; flex-shrink: 0; min-height: 44px; display: inline-flex; align-items: center; }
 .jump-menu a:hover { background: var(--accent-orange); }
 .jump-menu a:focus { outline: 2px solid var(--accent-green); }
@@ -255,4 +255,6 @@ footer { background: var(--bg-primary); border-top: 2px solid var(--accent-orang
 /* Utility */
 .hidden { display: none; }
 .service-card-narrow { max-width: 800px; margin: 0 auto; }
+
+
 
