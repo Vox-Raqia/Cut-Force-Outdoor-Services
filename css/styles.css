@@ -256,5 +256,89 @@ footer { background: var(--bg-primary); border-top: 2px solid var(--accent-orang
 .hidden { display: none; }
 .service-card-narrow { max-width: 800px; margin: 0 auto; }
 
+/* ── Cookie Consent Banner ── */
+#cf-consent-banner {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#cf-consent-banner.cf-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cf-consent-inner {
+  background: var(--bg-card, #111418);
+  border: 1px solid var(--accent-orange, #F26B1D);
+  border-radius: 10px;
+  padding: 28px 24px 20px;
+  max-width: 520px;
+  width: 92%;
+  text-align: center;
+  color: var(--text-white, #FFFFFF);
+}
+.cf-consent-text {
+  font-size: 0.95rem;
+  color: var(--text-gray, #D0D4DC);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+.cf-consent-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cf-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-height: 44px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+.cf-btn-accept {
+  background: var(--accent-orange, #F26B1D);
+  color: var(--text-white, #FFFFFF);
+  box-shadow: 0 4px 12px rgba(242, 107, 29, 0.4);
+}
+.cf-btn-accept:hover { transform: translateY(-1px); }
+.cf-btn-essential {
+  background: transparent;
+  color: var(--text-white, #FFFFFF);
+  border: 2px solid rgba(255,255,255,0.25);
+}
+.cf-btn-essential:hover { border-color: var(--text-white, #FFFFFF); }
+
+/* Footer consent toggle */
+.cf-consent-toggle {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  color: var(--text-muted, #9CA3AF);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.cf-consent-toggle:hover {
+  border-color: var(--accent-orange, #F26B1D);
+  color: var(--accent-orange, #F26B1D);
+}
+
 
 

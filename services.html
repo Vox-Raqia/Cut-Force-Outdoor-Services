@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Clarity tracking code for https://cutforceoutdoorservices.ca/ -->
-<script>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xai594ujfy");
-</script>
+    <!-- Analytics loaded via js/site.js with cookie consent -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Cut Force: Outdoor Services | Hope, BC</title>
@@ -59,7 +52,7 @@
                     <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html" onclick="clarity('event','cta_book_click')"><span>Book Now</span></a>
+                    <li><a href="contact.html" data-track="cta_book_click">Book Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -225,7 +218,7 @@
                 </ul>
                 <p class="text-center mb-l text-muted">If you're unsure whether your location is covered, just reach out — I'll let you know quickly and honestly.</p>
                 <div class="cta-block">
-                    <a href="sms:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_text_click')"><span>Text Your Address</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-orange" data-track="cta_text_click"><span>Text Your Address</span></a>
                 </div>
             </div>
         </section>
@@ -237,7 +230,7 @@
                     <p>If you've got outdoor work that needs doing — heavy, messy, or just too much to tackle alone — I'm here to help.</p>
                 </div>
                 <div class="text-center">
-                    <a href="contact.html" class="btn btn-orange" onclick="clarity('event','cta_quote_click')"><span>Book a Service</span></a>
+                    <a href="contact.html" class="btn btn-orange" data-track="cta_quote_click"><span>Book a Service</span></a>
                 </div>
             </div>
         </section>
@@ -255,9 +248,9 @@
     </footer>
 
     <div class="sticky-action-bar" aria-label="Quick contact">
-<a href="tel:604-206-8586" onclick="clarity('event','cta_call_click')"><span class="bar-icon">📞</span> Call</a>
-        <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')"><span class="bar-icon">💬</span> Text</a>
-        <a href="contact.html" onclick="clarity('event','cta_contact_click')"><span class="bar-icon">📝</span> Contact</a>
+<a href="tel:604-206-8586" data-track="cta_call_click"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586" data-track="cta_text_click"><span class="bar-icon">💬</span> Text</a>
+        <a href="contact.html" data-track="cta_contact_click"><span class="bar-icon">📝</span> Contact</a>
     </div>
 
     <script>
@@ -270,6 +263,7 @@
             menuToggle.textContent = isOpen ? '☰' : '✕';
         });
     </script>
+    <script src="js/site.js"></script>
 </body>
 </html>
 

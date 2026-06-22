@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Clarity tracking code for https://cutforceoutdoorservices.ca/ -->
-<script>
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xai594ujfy");
-</script>
+    <!-- Analytics loaded via js/site.js with cookie consent -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request a Quote | Cut Force: Outdoor Services | Hope, BC</title>
@@ -40,7 +33,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="booking.html" class="active"><span>Book Now</span></a>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,8 +50,8 @@
     <section class="contact" id="main-content">
         <div class="container">
             <div class="quick-contact mb-l">
-<a href="tel:604-206-8586" class="call-link" onclick="clarity('event','cta_call_click')">📞 Call Now</a>
-                <a href="sms:604-206-8586" class="text-link" onclick="clarity('event','cta_text_click')">💬 Text a Photo</a>
+<a href="tel:604-206-8586" class="call-link" data-track="cta_call_click">📞 Call Now</a>
+                <a href="sms:604-206-8586" class="text-link" data-track="cta_text_click">💬 Text a Photo</a>
             </div>
             <p class="text-center mb-l text-muted">Prefer not to use forms? Give me a call or send a text anytime.</p>
 
@@ -111,7 +104,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-orange btn-full" onclick="clarity('event','form_quote_submit')">Send Request</button>
+                <button type="submit" class="btn btn-orange btn-full" data-track="form_quote_submit">Send Request</button>
             </form>
 
             <div class="confirmation" id="bookingConfirmation">
@@ -119,8 +112,8 @@
                 <p>I'll get back to you as soon as I can. If it's urgent, feel free to call or text.</p>
                 <p><strong>Phone: 604-206-8586</strong></p>
                 <div class="quick-contact mt-l">
-<a href="tel:604-206-8586" class="call-link" onclick="clarity('event','cta_call_click')">📞 Call</a>
-                    <a href="sms:604-206-8586" class="text-link" onclick="clarity('event','cta_text_click')">💬 Text</a>
+<a href="tel:604-206-8586" class="call-link" data-track="cta_call_click">📞 Call</a>
+                    <a href="sms:604-206-8586" class="text-link" data-track="cta_text_click">💬 Text</a>
                 </div>
             </div>
         </div>
@@ -137,9 +130,9 @@
     </footer>
 
     <div class="sticky-action-bar" aria-label="Quick contact">
-<a href="tel:604-206-8586" onclick="clarity('event','cta_call_click')"><span class="bar-icon">📞</span> Call</a>
-        <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')"><span class="bar-icon">💬</span> Text</a>
-        <a href="index.html" onclick="clarity('event','cta_home_click')"><span class="bar-icon">🏠</span> Home</a>
+<a href="tel:604-206-8586" data-track="cta_call_click"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586" data-track="cta_text_click"><span class="bar-icon">💬</span> Text</a>
+        <a href="index.html" data-track="cta_home_click"><span class="bar-icon">🏠</span> Home</a>
     </div>
 
     <script>
@@ -212,6 +205,7 @@
             });
         });
     </script>
+    <script src="js/site.js"></script>
 </body>
 </html>
 
