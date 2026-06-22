@@ -57,8 +57,8 @@
     <section class="contact" id="main-content">
         <div class="container">
             <div class="quick-contact mb-l">
-                <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
-                <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
+                <a href="tel:604-206-8586" class="call-link" onclick="clarity('event','cta_call_click')">📞 Call Now</a>
+                <a href="sms:604-206-8586" class="text-link" onclick="clarity('event','cta_text_click')">💬 Text a Photo</a>
             </div>
             <p class="text-center mb-l text-muted">Call or text anytime to discuss the work and get a quote.</p>
 
@@ -75,12 +75,12 @@
                     <li><strong>Timeline</strong> — if you need it done soon or are flexible</li>
                 </ul>
                 
-                <p class="text-center mt-m">You can send all of this by <a href="sms:604-206-8586">text</a> or <a href="mailto:carl@cutforceoutdoorservices.ca">email</a> — whatever's easiest.</p>
+                <p class="text-center mt-m">You can send all of this by <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')">text</a> or <a href="mailto:carl@cutforceoutdoorservices.ca" onclick="clarity('event','cta_email_click')">email</a> — whatever's easiest.</p>
             </div>
 
             <div class="cta-block mt-xl">
                 <p>Send me an email directly — I usually reply within a few hours.</p>
-                <a href="mailto:carl@cutforceoutdoorservices.ca?subject=Inquiry%20from%20Cut%20Force%20Website" class="btn btn-orange btn-full">Email Carl</a>
+                <a href="mailto:carl@cutforceoutdoorservices.ca?subject=Inquiry%20from%20Cut%20Force%20Website" class="btn btn-orange btn-full" onclick="clarity('event','cta_email_click')">Email Carl</a>
             </div>
         </div>
     </section>
@@ -96,9 +96,9 @@
     </footer>
 
     <div class="sticky-action-bar" aria-label="Quick contact">
-        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
-        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
-        <a href="booking.html"><span class="bar-icon">📝</span> Quote</a>
+        <a href="tel:604-206-8586" onclick="clarity('event','cta_call_click')"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')"><span class="bar-icon">💬</span> Text</a>
+        <a href="booking.html" onclick="clarity('event','cta_quote_click')"><span class="bar-icon">📝</span> Quote</a>
     </div>
 
     <script>

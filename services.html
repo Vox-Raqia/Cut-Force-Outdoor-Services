@@ -59,7 +59,7 @@
                     <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Book Now</a></li>
+                    <li><a href="contact.html" onclick="clarity('event','cta_book_click')"><span>Book Now</span></a>
                 </ul>
             </nav>
         </div>
@@ -225,7 +225,7 @@
                 </ul>
                 <p class="text-center mb-l text-muted">If you're unsure whether your location is covered, just reach out — I'll let you know quickly and honestly.</p>
                 <div class="cta-block">
-                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Your Address</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_text_click')"><span>Text Your Address</span></a>
                 </div>
             </div>
         </section>
@@ -237,7 +237,7 @@
                     <p>If you've got outdoor work that needs doing — heavy, messy, or just too much to tackle alone — I'm here to help.</p>
                 </div>
                 <div class="text-center">
-                    <a href="contact.html" class="btn btn-orange"><span>Book a Service</span></a>
+                    <a href="contact.html" class="btn btn-orange" onclick="clarity('event','cta_quote_click')"><span>Book a Service</span></a>
                 </div>
             </div>
         </section>
@@ -255,9 +255,9 @@
     </footer>
 
     <div class="sticky-action-bar" aria-label="Quick contact">
-        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
-        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
-        <a href="contact.html"><span class="bar-icon">📝</span> Contact</a>
+<a href="tel:604-206-8586" onclick="clarity('event','cta_call_click')"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')"><span class="bar-icon">💬</span> Text</a>
+        <a href="contact.html" onclick="clarity('event','cta_contact_click')"><span class="bar-icon">📝</span> Contact</a>
     </div>
 
     <script>

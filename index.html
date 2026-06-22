@@ -59,7 +59,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Book Now</a></li>
+                    <li><a href="contact.html" onclick="clarity('event','cta_book_click')"><span>Book Now</span></a>
                 </ul>
             </nav>
         </div>
@@ -80,8 +80,8 @@
             <p class="hero-tagline">Solo operator offering brush clearing, yard cleanups, and exterior services.</p>
             <p class="hero-description">Fast, honest, no-nonsense work. If it's overgrown, buried, or out of control — I can handle it.</p>
             <div class="hero-buttons">
-                <a href="tel:604-206-8586" class="btn btn-orange"><span>Call for a Quick Quote</span></a>
-                <a href="sms:604-206-8586" class="btn btn-outline"><span>Text Me a Photo</span></a>
+                <a href="tel:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_call_click')"><span>Call for a Quick Quote</span></a>
+                <a href="sms:604-206-8586" class="btn btn-outline" onclick="clarity('event','cta_text_click')"><span>Text Me a Photo</span></a>
             </div>
         </div>
         <div class="scroll-indicator" aria-hidden="true" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
@@ -150,8 +150,8 @@
                 </div>
                 <div class="cta-block">
                     <p>See something you need? Call or text anytime.</p>
-                    <a href="tel:604-206-8586" class="btn btn-orange"><span>Call Now</span></a>
-                    <a href="sms:604-206-8586" class="btn btn-outline"><span>Text a Photo</span></a>
+                    <a href="tel:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_call_click')"><span>Call Now</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-outline" onclick="clarity('event','cta_text_click')"><span>Text a Photo</span></a>
                 </div>
             </div>
         </section>
@@ -181,7 +181,7 @@
                 </div>
                 <div class="cta-block">
                     <p>Ready to get something off your to-do list?</p>
-                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Me a Photo</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_text_click')"><span>Text Me a Photo</span></a>
                 </div>
             </div>
         </section>
@@ -213,8 +213,8 @@
                 <p class="text-center mb-l text-muted">If you're not sure, just ask. I'll tell you straight if it's a fit.</p>
                 <div class="cta-block">
                     <p>Ready when you are.</p>
-                    <a href="contact.html" class="btn btn-orange"><span>Request a Quote</span></a>
-                    <a href="sms:604-206-8586" class="btn btn-outline"><span>Text Your Address</span></a>
+                    <a href="contact.html" class="btn btn-orange" onclick="clarity('event','cta_quote_click')"><span>Request a Quote</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-outline" onclick="clarity('event','cta_text_click')"><span>Text Your Address</span></a>
                 </div>
             </div>
         </section>
@@ -236,7 +236,7 @@
                 <p class="text-center mb-l text-muted">Other nearby areas on request.</p>
                 <div class="cta-block">
                     <p>Not sure if you're in range?</p>
-                    <a href="sms:604-206-8586" class="btn btn-orange"><span>Text Your Address</span></a>
+                    <a href="sms:604-206-8586" class="btn btn-orange" onclick="clarity('event','cta_text_click')"><span>Text Your Address</span></a>
                 </div>
             </div>
         </section>
@@ -248,13 +248,13 @@
                     <p>Get in touch — call, text, or send a quick quote request.</p>
                 </div>
                 <div class="quick-contact">
-                    <a href="tel:604-206-8586" class="call-link">📞 Call Now</a>
-                    <a href="sms:604-206-8586" class="text-link">💬 Text a Photo</a>
+                    <a href="tel:604-206-8586" class="call-link" onclick="clarity('event','cta_call_click')">📞 Call Now</a>
+                    <a href="sms:604-206-8586" class="text-link" onclick="clarity('event','cta_text_click')">💬 Text a Photo</a>
                 </div>
                 <div class="cta-block">
                     <p>Prefer a form?</p>
-                    <a href="contact.html" class="btn btn-orange"><span>Request a Quote</span></a>
-                    <a href="contact.html" class="btn btn-outline"><span>Send a Message</span></a>
+                    <a href="contact.html" class="btn btn-orange" onclick="clarity('event','cta_quote_click')"><span>Request a Quote</span></a>
+                    <a href="contact.html" class="btn btn-outline" onclick="clarity('event','cta_contact_click')"><span>Send a Message</span></a>
                 </div>
             </div>
         </section>
@@ -273,9 +273,9 @@
     </footer>
 
     <div class="sticky-action-bar" aria-label="Quick contact">
-        <a href="tel:604-206-8586"><span class="bar-icon">📞</span> Call</a>
-        <a href="sms:604-206-8586"><span class="bar-icon">💬</span> Text</a>
-        <a href="contact.html"><span class="bar-icon">📝</span> Contact</a>
+        <a href="tel:604-206-8586" onclick="clarity('event','cta_call_click')"><span class="bar-icon">📞</span> Call</a>
+        <a href="sms:604-206-8586" onclick="clarity('event','cta_text_click')"><span class="bar-icon">💬</span> Text</a>
+        <a href="contact.html" onclick="clarity('event','cta_contact_click')"><span class="bar-icon">📝</span> Contact</a>
     </div>
 
     <script>
